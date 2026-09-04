@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,51 +6,40 @@
   <meta name="referrer" content="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Specialty Tree Service — Valdosta, GA | Hazardous Tree Removal, Crane & Bobcat Services | Est. 1980</title>
-
-  <!-- SEO Meta Tags -->
   <meta name="description" content="Specialty Tree Service in Valdosta, GA. Founded by Mike Boggan in 1980. Experts in hazardous tree removal, crane & bucket truck services, stump grinding, and commercial/residential storm cleanup. Free estimates. Call 229.341.5953." />
   <meta name="keywords" content="hazardous tree removal Valdosta GA, crane assisted tree removal, bucket truck tree service, bobcat land clearing, stump grinding Lowndes County, emergency storm debris removal, commercial tree service Valdosta, Mike Boggan tree service" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Specialty Tree Service" />
   <link rel="canonical" href="https://specialtytreeservicevaldosta.com/" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Specialty Tree Service — Valdosta, GA | Hazardous & Commercial Tree Care" />
   <meta property="og:description" content="Founded by Mike Boggan in 1980. Experts in hazardous tree removal, crane & bucket truck services, and commercial/residential storm cleanup in Valdosta, GA. Free estimates." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://specialtytreeservicevaldosta.com/" />
-  <meta property="og:image" content="https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg?auto=compress&w=1200" />
+  <meta property="og:image" content="./images/hero-bg.jpg" />
+  
+  <link rel="preload" as="image" href="./images/hero-bg.jpg" fetchpriority="high" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/bricolage-grotesque@5.2.10/index.css" />
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/manrope@5.2.8/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource-variable/bricolage-grotesque@5.2.10/index.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource-variable/manrope@5.2.8/index.css" rel="stylesheet" />
 
-  <!-- Schema.org Local Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Specialty Tree Service",
-    "image": "https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg?auto=compress&w=1200",
+    "image": "./images/hero-bg.jpg",
     "description": "Licensed and insured hazardous tree removal, trimming, stump grinding, and emergency storm cleanup serving Valdosta, GA. Equipped with cranes, bucket trucks, and bobcats.",
     "foundingDate": "1980",
-    "founder": {
-      "@type": "Person",
-      "name": "Mike Boggan"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Valdosta",
-      "addressRegion": "GA",
-      "postalCode": "31601",
-      "addressCountry": "US"
-    },
+    "founder": { "@type": "Person", "name": "Mike Boggan" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Valdosta", "addressRegion": "GA", "postalCode": "31601", "addressCountry": "US" },
     "telephone": "+1-229-341-5953",
     "url": "https://specialtytreeservicevaldosta.com/",
     "openingHours": ["Mo-Fr 07:00-19:00", "Sa 08:00-17:00"],
     "areaServed": ["Valdosta", "Hahira", "Lake Park", "Remerton", "Lowndes County"],
     "priceRange": "$$",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "1"
-    },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "1" },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Specialized Tree Care Services",
@@ -64,1368 +54,343 @@
   }
   </script>
 
-  <!-- Fonts: Bricolage Grotesque (display/headings) + Manrope (body/utility) -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link href="https://cdn.jsdelivr.net/npm/@fontsource-variable/bricolage-grotesque@5.2.10/index.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/@fontsource-variable/manrope@5.2.8/index.css" rel="stylesheet" />
-
   <style>
-    /* ─── Design Tokens ─────────────────────────────────────── */
     :root {
-      --bg:           #0f1f14;   
-      --bg-mid:       #16231a;   
-      --surface:      #1e3024;   
-      --surface-hi:   #263a2d;   
-      --fg:           #eef2eb;   
-      --fg-dim:       #a3b29d;   
-      --border:       #324537;   
-      --accent:       #c8702a;   
-      --accent-hi:    #d9853e;   
-      --accent-soft:  rgba(200,112,42,0.12);
-      --green-light:  #5a9c6c;   
-      --green-glow:   rgba(90,156,108,0.15);
-
+      --bg: #0f1f14; --bg-mid: #16231a; --surface: #1e3024; --surface-hi: #263a2d;
+      --fg: #eef2eb; --fg-dim: #a3b29d; --border: #324537;
+      --accent: #a85a1f; --accent-hi: #b8661f; --accent-soft: rgba(168,90,31,0.12);
+      --green-light: #5a9c6c; --green-glow: rgba(90,156,108,0.15);
       --font-display: 'Bricolage Grotesque Variable', 'Georgia', serif;
-      --font-body:    'Manrope Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      --font-mono:    ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, monospace;
-
-      --fs-hero:   clamp(46px, 7vw, 88px);
-      --fs-h2:     clamp(28px, 4vw, 46px);
-      --fs-h3:     clamp(18px, 2.5vw, 22px);
-      --fs-lead:   clamp(16px, 2vw, 19px);
-      --fs-body:   16px;
-      --fs-sm:     14px;
-      --fs-xs:     12px;
-
-      --sp-1:  8px;
-      --sp-2:  16px;
-      --sp-3:  24px;
-      --sp-4:  32px;
-      --sp-5:  48px;
-      --sp-6:  64px;
-      --sp-7:  96px;
-      --sp-8: 128px;
-
-      --container: 1160px;
-      --gutter: clamp(20px, 4vw, 48px);
-      --radius: 10px;
-      --radius-lg: 18px;
-      --radius-xl: 28px;
+      --font-body: 'Manrope Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      --font-mono: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+      --fs-hero: clamp(46px, 7vw, 88px); --fs-h2: clamp(28px, 4vw, 46px); --fs-h3: clamp(18px, 2.5vw, 22px);
+      --fs-lead: clamp(16px, 2vw, 19px); --fs-body: 16px; --fs-sm: 14px; --fs-xs: 12px;
+      --sp-1: 8px; --sp-2: 16px; --sp-3: 24px; --sp-4: 32px; --sp-5: 48px; --sp-6: 64px; --sp-7: 96px; --sp-8: 128px;
+      --container: 1160px; --gutter: clamp(20px, 4vw, 48px); --radius: 10px; --radius-lg: 18px; --radius-xl: 28px;
     }
-
-    /* ─── Reset & Base ──────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
     body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: var(--font-body);
-      font-size: var(--fs-body);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      overflow-x: hidden;
+      background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: var(--fs-body);
+      line-height: 1.6; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: hidden;
     }
-    
-    /* Premium tactile noise overlay */
     body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
+      content: ""; position: fixed; inset: 0;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 9999;
-      opacity: 0.6;
+      pointer-events: none; z-index: 9999; opacity: 0.6;
     }
-
     img, svg { display: block; max-width: 100%; }
     a { color: inherit; text-decoration: none; }
     button { font: inherit; cursor: pointer; border: none; background: none; }
     input, textarea, select { font: inherit; }
     p { text-wrap: pretty; }
     h1, h2, h3, h4 { text-wrap: balance; }
-
-    /* ─── Layout ────────────────────────────────────────────── */
-    .container {
-      max-width: var(--container);
-      margin-inline: auto;
-      padding-inline: var(--gutter);
-    }
+    .container { max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
     .section { padding-block: clamp(56px, 9vw, var(--sp-8)); }
-
-    /* ─── Typography ────────────────────────────────────────── */
     .eyebrow {
-      font-family: var(--font-mono);
-      font-size: var(--fs-xs);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      display: inline-flex;
-      align-items: center;
-      gap: var(--sp-1);
+      font-family: var(--font-mono); font-size: var(--fs-xs); letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); display: inline-flex; align-items: center; gap: var(--sp-1);
     }
-    .eyebrow::before {
-      content: '';
-      display: inline-block;
-      width: 20px;
-      height: 1.5px;
-      background: var(--accent);
-      flex-shrink: 0;
-    }
-
-    /* ─── Sticky Nav ────────────────────────────────────────── */
+    .eyebrow::before { content: ''; display: inline-block; width: 20px; height: 1.5px; background: var(--accent); flex-shrink: 0; }
     #topnav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      transition: background 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
-      padding-block: 20px;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      transition: background 0.3s ease, border-color 0.3s ease, padding 0.3s ease; padding-block: 20px;
     }
     #topnav.scrolled {
-      background: rgba(15, 31, 20, 0.95);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-      padding-block: 14px;
+      background: rgba(15, 31, 20, 0.95); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border); padding-block: 14px;
     }
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--sp-3);
-    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-3); }
     .nav-logo {
-      font-family: var(--font-display);
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--fg);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
+      font-family: var(--font-display); font-size: 18px; font-weight: 700; letter-spacing: -0.02em;
+      color: var(--fg); display: flex; align-items: center; gap: 10px; flex-shrink: 0;
     }
-    .nav-logo-mark {
-      width: 32px;
-      height: 32px;
-      background: var(--accent);
-      border-radius: 8px;
-      display: grid;
-      place-items: center;
-      flex-shrink: 0;
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: var(--sp-4);
-      list-style: none;
-    }
-    .nav-links a {
-      font-size: var(--fs-sm);
-      font-weight: 500;
-      color: var(--fg-dim);
-      transition: color 0.15s;
-    }
+    .nav-logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: grid; place-items: center; flex-shrink: 0; }
+    .nav-links { display: flex; align-items: center; gap: var(--sp-4); list-style: none; }
+    .nav-links a { font-size: var(--fs-sm); font-weight: 500; color: var(--fg-dim); transition: color 0.15s; }
     .nav-links a:hover { color: var(--fg); }
-    .nav-cta {
-      display: flex;
-      align-items: center;
-      gap: var(--sp-2);
-      flex-shrink: 0;
-    }
-    .nav-phone {
-      font-size: var(--fs-sm);
-      font-weight: 600;
-      color: var(--fg);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+    .nav-cta { display: flex; align-items: center; gap: var(--sp-2); flex-shrink: 0; }
+    .nav-phone { font-size: var(--fs-sm); font-weight: 600; color: var(--fg); display: flex; align-items: center; gap: 6px; }
     .nav-phone svg { color: var(--accent); }
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      padding: 4px;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    .hamburger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--fg);
-      border-radius: 2px;
-      transition: all 0.25s ease;
-    }
+    .hamburger { display: none; flex-direction: column; gap: 5px; padding: 4px; background: none; border: none; cursor: pointer; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--fg); border-radius: 2px; transition: all 0.25s ease; }
     .mobile-menu {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: var(--bg);
-      z-index: 99;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: var(--sp-3);
+      display: none; position: fixed; inset: 0; background: var(--bg); z-index: 99;
+      flex-direction: column; align-items: center; justify-content: center; gap: var(--sp-3);
     }
     .mobile-menu.open { display: flex; }
-    .mobile-menu a {
-      font-family: var(--font-display);
-      font-size: clamp(28px, 6vw, 42px);
-      font-weight: 700;
-      color: var(--fg);
-      transition: color 0.15s;
-    }
+    .mobile-menu a { font-family: var(--font-display); font-size: clamp(28px, 6vw, 42px); font-weight: 700; color: var(--fg); transition: color 0.15s; }
     .mobile-menu a:hover { color: var(--accent); }
-    .mobile-menu-close {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      color: var(--fg-dim);
-      font-size: 28px;
-      cursor: pointer;
-      line-height: 1;
-      background: none;
-      border: none;
-    }
-
-    /* ─── Buttons ───────────────────────────────────────────── */
+    .mobile-menu-close { position: absolute; top: 24px; right: 24px; color: var(--fg-dim); font-size: 28px; cursor: pointer; line-height: 1; background: none; border: none; }
     .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 13px 26px;
-      border-radius: var(--radius);
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: -0.01em;
+      display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: var(--radius);
+      font-size: 15px; font-weight: 600; letter-spacing: -0.01em;
       transition: transform 0.06s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-      border: 1.5px solid transparent;
-      cursor: pointer;
-      white-space: nowrap;
-      text-decoration: none;
+      border: 1.5px solid transparent; cursor: pointer; white-space: nowrap; text-decoration: none;
     }
     .btn:active { transform: translateY(1px); }
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
-      box-shadow: 0 4px 20px rgba(200,112,42,0.35);
-    }
-    .btn-primary:hover {
-      background: var(--accent-hi);
-      border-color: var(--accent-hi);
-      box-shadow: 0 6px 28px rgba(200,112,42,0.45);
-      transform: translateY(-1px);
-    }
-    .btn-outline {
-      background: transparent;
-      color: var(--fg);
-      border-color: var(--border);
-    }
-    .btn-outline:hover {
-      border-color: var(--fg-dim);
-      color: var(--fg);
-    }
+    .btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 4px 20px rgba(168,90,31,0.35); }
+    .btn-primary:hover { background: var(--accent-hi); border-color: var(--accent-hi); box-shadow: 0 6px 28px rgba(168,90,31,0.45); transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: var(--fg); border-color: var(--border); }
+    .btn-outline:hover { border-color: var(--fg-dim); color: var(--fg); }
     .btn-lg { padding: 16px 34px; font-size: 16px; border-radius: 12px; }
     .btn-sm { padding: 9px 18px; font-size: 13px; }
-
-    /* ─── Emergency Banner ──────────────────────────────────── */
     .emergency-bar {
-      background: var(--accent);
-      color: #fff;
-      text-align: center;
-      padding: 10px var(--gutter);
-      font-size: var(--fs-sm);
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+      background: var(--accent); color: #fff; text-align: center; padding: 10px var(--gutter);
+      font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0.01em; display: flex; align-items: center; justify-content: center; gap: 10px;
     }
     .emergency-bar a {
-      color: #fff;
-      text-decoration: underline;
-      text-decoration-color: rgba(255,255,255,0.5);
-      text-underline-offset: 2px;
+      color: #fff; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.85); text-underline-offset: 2px; font-weight: 700;
     }
     .pulse-dot {
-      width: 8px;
-      height: 8px;
-      background: #fff;
-      border-radius: 50%;
-      animation: pulse-ring 1.8s ease-out infinite;
-      flex-shrink: 0;
+      width: 8px; height: 8px; background: #fff; border-radius: 50%;
+      animation: pulse-ring 1.8s ease-out infinite; flex-shrink: 0;
     }
     @keyframes pulse-ring {
-      0%   { box-shadow: 0 0 0 0 rgba(255,255,255,0.6); }
-      70%  { box-shadow: 0 0 0 8px rgba(255,255,255,0); }
-      100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+      0% { transform: scale(0.95); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.5; }
+      100% { transform: scale(2); opacity: 0; }
     }
-
-    /* ─── HERO ──────────────────────────────────────────────── */
-    .hero {
-      position: relative;
-      min-height: 960px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-    }
+    .hero { position: relative; min-height: 960px; display: flex; align-items: center; overflow: hidden; }
     .hero-bg {
-      position: absolute;
-      inset: 0;
-      background-image: url('./images/hero-bg.jpg');
-      background-size: cover;
-      background-position: center 30%;
-      filter: brightness(0.35) saturate(0.8);
-      transform: scale(1.04);
-      transition: transform 8s ease-out;
+      position: absolute; inset: 0; background-image: url('./images/hero-bg.jpg');
+      background-size: cover; background-position: center 30%; filter: brightness(0.35) saturate(0.8);
+      transform: scale(1.04); transition: transform 8s ease-out;
     }
     .hero-bg.loaded { transform: scale(1); }
     .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        160deg,
-        rgba(15,31,20,0.4) 0%,
-        rgba(15,31,20,0.1) 50%,
-        rgba(15,31,20,0.75) 100%
-      );
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(15,31,20,0.4) 0%, rgba(15,31,20,0.1) 50%, rgba(15,31,20,0.75) 100%);
     }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      padding-top: 120px;
-      padding-bottom: 80px;
-    }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 420px;
-      gap: var(--sp-6);
-      align-items: center;
-    }
+    .hero-content { position: relative; z-index: 2; padding-top: 120px; padding-bottom: 80px; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 420px; gap: var(--sp-6); align-items: center; }
     .hero-text .eyebrow { margin-bottom: var(--sp-3); }
     .hero-headline {
-      font-family: var(--font-display);
-      font-size: var(--fs-hero);
-      font-weight: 800;
-      line-height: 0.98;
-      letter-spacing: -0.03em;
-      color: var(--fg);
-      margin-bottom: var(--sp-3);
+      font-family: var(--font-display); font-size: var(--fs-hero); font-weight: 800; line-height: 0.98;
+      letter-spacing: -0.03em; color: var(--fg); margin-bottom: var(--sp-3);
     }
-    .hero-headline em {
-      font-style: normal;
-      color: var(--accent);
-      display: block;
-    }
-    .hero-lead {
-      font-size: var(--fs-lead);
-      color: var(--fg-dim);
-      line-height: 1.6;
-      max-width: 52ch;
-      margin-bottom: var(--sp-4);
-    }
-    .hero-cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--sp-2);
-      align-items: center;
-      margin-bottom: var(--sp-5);
-    }
-    .trust-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+    .hero-headline em { font-style: normal; color: var(--accent); display: block; }
+    .hero-lead { font-size: var(--fs-lead); color: var(--fg-dim); line-height: 1.6; max-width: 52ch; margin-bottom: var(--sp-4); }
+    .hero-cta-row { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; margin-bottom: var(--sp-5); }
+    .trust-pills { display: flex; flex-wrap: wrap; gap: 10px; }
     .trust-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: var(--fs-xs);
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--fg-dim);
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      padding: 5px 12px;
-      background: rgba(255,255,255,0.04);
+      display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-xs); font-weight: 600;
+      letter-spacing: 0.04em; text-transform: uppercase; color: var(--fg-dim); border: 1px solid var(--border);
+      border-radius: 100px; padding: 5px 12px; background: rgba(255,255,255,0.04);
     }
     .trust-pill svg { color: var(--green-light); flex-shrink: 0; }
-
-    /* Hero Quote Card */
     .hero-quote-card {
-      background: rgba(30, 48, 36, 0.85);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: var(--sp-4);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      position: relative;
-      overflow: hidden;
+      background: rgba(30, 48, 36, 0.85); border: 1px solid var(--border); border-radius: var(--radius-xl);
+      padding: var(--sp-4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); position: relative; overflow: hidden;
     }
     .hero-quote-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--green-light));
-      border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--green-light)); border-radius: var(--radius-xl) var(--radius-xl) 0 0;
     }
-    .hqc-stars {
-      display: flex;
-      gap: 3px;
-      margin-bottom: var(--sp-2);
-    }
+    .hqc-stars { display: flex; gap: 3px; margin-bottom: var(--sp-2); }
     .star { color: #f5b942; font-size: 16px; }
-    .hqc-quote {
-      font-size: 15px;
-      line-height: 1.65;
-      color: var(--fg);
-      margin-bottom: var(--sp-2);
-      font-style: italic;
-    }
-    .hqc-author {
-      font-size: var(--fs-xs);
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--fg-dim);
-      margin-bottom: var(--sp-3);
-    }
-    .hqc-divider {
-      height: 1px;
-      background: var(--border);
-      margin-block: var(--sp-3);
-    }
-    .hqc-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--sp-2);
-      text-align: center;
-    }
-    .hqc-stat-num {
-      font-family: var(--font-display);
-      font-size: 26px;
-      font-weight: 800;
-      color: var(--fg);
-      letter-spacing: -0.03em;
-      display: block;
-    }
-    .hqc-stat-label {
-      font-size: 11px;
-      color: var(--fg-dim);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      line-height: 1.3;
-      display: block;
-    }
-
-    /* ─── Trust Bar ─────────────────────────────────────────── */
-    .trust-bar {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding-block: var(--sp-3);
-    }
-    .trust-bar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: var(--sp-2);
-    }
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: var(--fs-sm);
-      font-weight: 600;
-      color: var(--fg);
-    }
-    .trust-icon {
-      width: 34px;
-      height: 34px;
-      background: var(--accent-soft);
-      border-radius: 8px;
-      display: grid;
-      place-items: center;
-      color: var(--accent);
-      flex-shrink: 0;
-    }
-    .trust-item small {
-      display: block;
-      font-size: 11px;
-      font-weight: 400;
-      color: var(--fg-dim);
-      margin-top: 1px;
-    }
-    .trust-bar-divider {
-      width: 1px;
-      height: 32px;
-      background: var(--border);
-    }
-
-    /* ─── Section Headers ───────────────────────────────────── */
-    .section-header {
-      text-align: center;
-      max-width: 680px;
-      margin-inline: auto;
-      margin-bottom: var(--sp-6);
-    }
+    .hqc-quote { font-size: 15px; line-height: 1.65; color: var(--fg); margin-bottom: var(--sp-2); font-style: italic; }
+    .hqc-author { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: var(--sp-3); }
+    .hqc-divider { height: 1px; background: var(--border); margin-block: var(--sp-3); }
+    .hqc-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-2); text-align: center; }
+    .hqc-stat-num { font-family: var(--font-display); font-size: 26px; font-weight: 800; color: var(--fg); letter-spacing: -0.03em; display: block; }
+    .hqc-stat-label { font-size: 11px; color: var(--fg-dim); text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.3; display: block; }
+    .trust-bar { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding-block: var(--sp-3); }
+    .trust-bar-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--sp-2); }
+    .trust-item { display: flex; align-items: center; gap: 10px; font-size: var(--fs-sm); font-weight: 600; color: var(--fg); }
+    .trust-icon { width: 34px; height: 34px; background: var(--accent-soft); border-radius: 8px; display: grid; place-items: center; color: var(--accent); flex-shrink: 0; }
+    .trust-item small { display: block; font-size: 11px; font-weight: 400; color: var(--fg-dim); margin-top: 1px; }
+    .trust-bar-divider { width: 1px; height: 32px; background: var(--border); }
+    .section-header { text-align: center; max-width: 680px; margin-inline: auto; margin-bottom: var(--sp-6); }
     .section-header .eyebrow { margin-bottom: var(--sp-2); }
-    .section-header h2 {
-      font-family: var(--font-display);
-      font-size: var(--fs-h2);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      line-height: 1.05;
-      color: var(--fg);
-      margin-bottom: var(--sp-2);
-    }
-    .section-header p {
-      font-size: var(--fs-lead);
-      color: var(--fg-dim);
-      line-height: 1.6;
-    }
-
-    /* ─── Services ──────────────────────────────────────────── */
+    .section-header h2 { font-family: var(--font-display); font-size: var(--fs-h2); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--fg); margin-bottom: var(--sp-2); }
+    .section-header p { font-size: var(--fs-lead); color: var(--fg-dim); line-height: 1.6; }
     .services { background: var(--bg-mid); }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: var(--sp-3);
-    }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--sp-3); }
     .service-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: var(--sp-4);
-      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
-      position: relative;
-      overflow: hidden;
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--sp-4);
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease; position: relative; overflow: hidden;
     }
     .service-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent), transparent);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s ease;
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent), transparent); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;
     }
-    .service-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--border);
-      background: var(--surface-hi);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.35);
-    }
+    .service-card:hover { transform: translateY(-4px); border-color: var(--border); background: var(--surface-hi); box-shadow: 0 16px 40px rgba(0,0,0,0.35); }
     .service-card:hover::after { transform: scaleX(1); }
-    .service-card.featured {
-      border-color: var(--accent);
-      background: linear-gradient(135deg, var(--surface) 60%, rgba(200,112,42,0.06) 100%);
-    }
+    .service-card.featured { border-color: var(--accent); background: linear-gradient(135deg, var(--surface) 60%, rgba(168,90,31,0.06) 100%); }
     .service-card.featured::after { transform: scaleX(1); background: var(--accent); }
     .service-badge {
-      position: absolute;
-      top: var(--sp-2);
-      right: var(--sp-2);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: var(--accent-soft);
-      border: 1px solid rgba(200,112,42,0.3);
-      border-radius: 100px;
-      padding: 3px 9px;
+      position: absolute; top: var(--sp-2); right: var(--sp-2); font-size: 10px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border: 1px solid rgba(168,90,31,0.3); border-radius: 100px; padding: 3px 9px;
     }
-    .service-icon {
-      width: 48px;
-      height: 48px;
-      background: var(--green-glow);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      color: var(--green-light);
-      margin-bottom: var(--sp-3);
-    }
-    .service-card h3 {
-      font-family: var(--font-display);
-      font-size: var(--fs-h3);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--fg);
-      margin-bottom: 8px;
-    }
-    .service-card p {
-      font-size: var(--fs-sm);
-      color: var(--fg-dim);
-      line-height: 1.65;
-      margin-bottom: var(--sp-3);
-    }
-    .service-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .tag {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      color: var(--fg-dim);
-      background: rgba(255,255,255,0.04);
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      padding: 3px 10px;
-    }
-
-    /* ─── Why Choose Us / Split Section ─────────────────────── */
-    .why-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--sp-6);
-      align-items: center;
-    }
-    .why-img-wrap {
-      position: relative;
-      border-radius: var(--radius-xl);
-      overflow: hidden;
-      aspect-ratio: 4 / 5;
-    }
-    .why-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.85) saturate(0.9);
-    }
+    .service-icon { width: 48px; height: 48px; background: var(--green-glow); border: 1px solid var(--border); border-radius: 12px; display: grid; place-items: center; color: var(--green-light); margin-bottom: var(--sp-3); }
+    .service-card h3 { font-family: var(--font-display); font-size: var(--fs-h3); font-weight: 700; letter-spacing: -0.02em; color: var(--fg); margin-bottom: 8px; }
+    .service-card p { font-size: var(--fs-sm); color: var(--fg-dim); line-height: 1.65; margin-bottom: var(--sp-3); }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { font-size: 11px; font-weight: 600; letter-spacing: 0.03em; color: var(--fg-dim); background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 100px; padding: 3px 10px; }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-6); align-items: center; }
+    .why-img-wrap { position: relative; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4 / 5; }
+    .why-img-wrap img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.85) saturate(0.9); }
     .why-img-badge {
-      position: absolute;
-      bottom: 24px;
-      left: 24px;
-      background: rgba(15, 31, 20, 0.92);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: var(--sp-2) var(--sp-3);
-      backdrop-filter: blur(12px);
+      position: absolute; bottom: 24px; left: 24px; background: rgba(15, 31, 20, 0.92); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: var(--sp-2) var(--sp-3); backdrop-filter: blur(12px);
     }
-    .why-img-badge-num {
-      font-family: var(--font-display);
-      font-size: 36px;
-      font-weight: 800;
-      color: var(--accent);
-      letter-spacing: -0.04em;
-      line-height: 1;
-    }
-    .why-img-badge-label {
-      font-size: 11px;
-      color: var(--fg-dim);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .why-text h2 {
-      font-family: var(--font-display);
-      font-size: var(--fs-h2);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      line-height: 1.05;
-      color: var(--fg);
-      margin-top: var(--sp-2);
-      margin-bottom: var(--sp-3);
-    }
-    .why-text > p {
-      font-size: var(--fs-lead);
-      color: var(--fg-dim);
-      line-height: 1.65;
-      margin-bottom: var(--sp-4);
-    }
-    .why-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: var(--sp-3);
-      margin-bottom: var(--sp-4);
-    }
-    .why-item {
-      display: grid;
-      grid-template-columns: 36px 1fr;
-      gap: var(--sp-2);
-      align-items: start;
-    }
-    .why-check {
-      width: 36px;
-      height: 36px;
-      background: var(--green-glow);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      display: grid;
-      place-items: center;
-      color: var(--green-light);
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .why-item-text strong {
-      display: block;
-      font-weight: 700;
-      font-size: 15px;
-      color: var(--fg);
-      margin-bottom: 3px;
-    }
-    .why-item-text span {
-      font-size: var(--fs-sm);
-      color: var(--fg-dim);
-      line-height: 1.55;
-    }
-
-    /* ─── Stats Row ─────────────────────────────────────────── */
+    .why-img-badge-num { font-family: var(--font-display); font-size: 36px; font-weight: 800; color: var(--accent); letter-spacing: -0.04em; line-height: 1; }
+    .why-img-badge-label { font-size: 11px; color: var(--fg-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+    .why-text h2 { font-family: var(--font-display); font-size: var(--fs-h2); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--fg); margin-top: var(--sp-2); margin-bottom: var(--sp-3); }
+    .why-text > p { font-size: var(--fs-lead); color: var(--fg-dim); line-height: 1.65; margin-bottom: var(--sp-4); }
+    .why-list { list-style: none; display: flex; flex-direction: column; gap: var(--sp-3); margin-bottom: var(--sp-4); }
+    .why-item { display: grid; grid-template-columns: 36px 1fr; gap: var(--sp-2); align-items: start; }
+    .why-check { width: 36px; height: 36px; background: var(--green-glow); border: 1px solid var(--border); border-radius: 10px; display: grid; place-items: center; color: var(--green-light); flex-shrink: 0; margin-top: 2px; }
+    .why-item-text strong { display: block; font-weight: 700; font-size: 15px; color: var(--fg); margin-bottom: 3px; }
+    .why-item-text span { font-size: var(--fs-sm); color: var(--fg-dim); line-height: 1.55; }
     .stats-row { background: var(--surface); }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-    }
-    .stat-cell {
-      padding: var(--sp-5) var(--sp-4);
-      text-align: center;
-      border-right: 1px solid var(--border);
-    }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+    .stat-cell { padding: var(--sp-5) var(--sp-4); text-align: center; border-right: 1px solid var(--border); }
     .stat-cell:last-child { border-right: none; }
-    .stat-num {
-      font-family: var(--font-display);
-      font-size: clamp(40px, 6vw, 64px);
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      color: var(--accent);
-      line-height: 1;
-      display: block;
-      margin-bottom: 8px;
-    }
-    .stat-label {
-      font-size: var(--fs-sm);
-      color: var(--fg-dim);
-      line-height: 1.45;
-      max-width: 18ch;
-      margin-inline: auto;
-    }
-
-    /* ─── Gallery / Before-After ─────────────────────────────── */
+    .stat-num { font-family: var(--font-display); font-size: clamp(40px, 6vw, 64px); font-weight: 800; letter-spacing: -0.04em; color: var(--accent); line-height: 1; display: block; margin-bottom: 8px; }
+    .stat-label { font-size: var(--fs-sm); color: var(--fg-dim); line-height: 1.45; max-width: 18ch; margin-inline: auto; }
     .gallery { background: var(--bg-mid); }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto auto;
-      gap: var(--sp-2);
-    }
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: var(--radius-lg);
-      background: var(--surface);
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease, filter 0.4s ease;
-      filter: brightness(0.8) saturate(0.85);
-    }
-    .gallery-item:hover img {
-      transform: scale(1.05);
-      filter: brightness(0.9) saturate(1);
-    }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto; gap: var(--sp-2); }
+    .gallery-item { position: relative; overflow: hidden; border-radius: var(--radius-lg); background: var(--surface); }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease, filter 0.4s ease; filter: brightness(0.8) saturate(0.85); }
+    .gallery-item:hover img { transform: scale(1.05); filter: brightness(0.9) saturate(1); }
     .gallery-item.tall { grid-row: span 2; }
     .gallery-item.wide { grid-column: span 2; }
     .gallery-caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: var(--sp-2) var(--sp-3);
-      background: linear-gradient(transparent, rgba(15,31,20,0.9));
-      font-size: var(--fs-xs);
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--fg-dim);
-      opacity: 0;
-      transition: opacity 0.3s ease;
+      position: absolute; bottom: 0; left: 0; right: 0; padding: var(--sp-2) var(--sp-3);
+      background: linear-gradient(transparent, rgba(15,31,20,0.9)); font-size: var(--fs-xs); font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); opacity: 0; transition: opacity 0.3s ease;
     }
     .gallery-item:hover .gallery-caption { opacity: 1; }
     .gallery-item .aspect-sq { aspect-ratio: 1; }
     .gallery-item .aspect-wide { aspect-ratio: 16/9; }
     .gallery-item .aspect-tall { aspect-ratio: 3/4; }
-
-    /* ─── Testimonials ──────────────────────────────────────── */
     .reviews { background: var(--bg); }
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--sp-3);
-      max-width: 680px;
-      margin: 0 auto;
-    }
+    .reviews-grid { display: grid; grid-template-columns: 1fr; gap: var(--sp-3); max-width: 680px; margin: 0 auto; }
     .review-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: var(--sp-4);
-      display: flex;
-      flex-direction: column;
-      gap: var(--sp-2);
-      transition: transform 0.2s ease, border-color 0.2s ease;
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--sp-4);
+      display: flex; flex-direction: column; gap: var(--sp-2); transition: transform 0.2s ease, border-color 0.2s ease;
     }
-    .review-card:hover {
-      transform: translateY(-3px);
-      border-color: rgba(200,112,42,0.25);
-    }
+    .review-card:hover { transform: translateY(-3px); border-color: rgba(168,90,31,0.25); }
     .review-stars { display: flex; gap: 3px; }
     .review-stars .star { font-size: 14px; }
-    .review-text {
-      font-size: 15px;
-      line-height: 1.7;
-      color: var(--fg);
-      flex: 1;
-    }
-    .review-footer {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding-top: var(--sp-2);
-      border-top: 1px solid var(--border);
-    }
+    .review-text { font-size: 15px; line-height: 1.7; color: var(--fg); flex: 1; }
+    .review-footer { display: flex; align-items: center; gap: 10px; padding-top: var(--sp-2); border-top: 1px solid var(--border); }
     .review-avatar {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: var(--accent-soft);
-      display: grid;
-      place-items: center;
-      font-family: var(--font-display);
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--accent);
-      flex-shrink: 0;
+      width: 36px; height: 36px; border-radius: 50%; background: var(--accent-soft); display: grid; place-items: center;
+      font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--accent); flex-shrink: 0;
     }
-    .review-author strong {
-      display: block;
-      font-size: var(--fs-sm);
-      font-weight: 700;
-      color: var(--fg);
-    }
-    .review-author span {
-      font-size: 11px;
-      color: var(--fg-dim);
-    }
-    .reviews-footer {
-      margin-top: var(--sp-5);
-      text-align: center;
-    }
-    .review-cta-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: var(--sp-4);
-      text-align: center;
-      max-width: 580px;
-      margin: 0 auto;
-    }
-    .review-cta-box h3 {
-      font-family: var(--font-display);
-      font-size: var(--fs-h3);
-      margin-bottom: var(--sp-2);
-      color: var(--fg);
-    }
-    .review-cta-box p {
-      color: var(--fg-dim);
-      margin-bottom: var(--sp-3);
-      font-size: var(--fs-sm);
-    }
-
-    /* ─── Booking / Estimate CTA ─────────────────────────────── */
+    .review-author strong { display: block; font-size: var(--fs-sm); font-weight: 700; color: var(--fg); }
+    .review-author span { font-size: 11px; color: var(--fg-dim); }
+    .reviews-footer { margin-top: var(--sp-5); text-align: center; }
+    .review-cta-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: var(--sp-4); text-align: center; max-width: 580px; margin: 0 auto; }
+    .review-cta-box h3 { font-family: var(--font-display); font-size: var(--fs-h3); margin-bottom: var(--sp-2); color: var(--fg); }
+    .review-cta-box p { color: var(--fg-dim); margin-bottom: var(--sp-3); font-size: var(--fs-sm); }
     .booking { background: var(--surface); }
-    .booking-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--sp-6);
-      align-items: start;
-    }
-    .booking-text h2 {
-      font-family: var(--font-display);
-      font-size: var(--fs-h2);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      line-height: 1.05;
-      color: var(--fg);
-      margin-top: var(--sp-2);
-      margin-bottom: var(--sp-2);
-    }
-    .booking-text p {
-      font-size: var(--fs-lead);
-      color: var(--fg-dim);
-      line-height: 1.6;
-      margin-bottom: var(--sp-4);
-    }
-    .booking-steps {
-      display: flex;
-      flex-direction: column;
-      gap: var(--sp-2);
-      margin-bottom: var(--sp-4);
-    }
-    .booking-step {
-      display: flex;
-      align-items: center;
-      gap: var(--sp-2);
-      font-size: var(--fs-sm);
-      color: var(--fg-dim);
-    }
-    .step-num {
-      width: 28px;
-      height: 28px;
-      background: var(--accent-soft);
-      border: 1px solid rgba(200,112,42,0.3);
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--accent);
-      flex-shrink: 0;
-    }
-    .booking-methods {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: var(--sp-3);
-    }
+    .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-6); align-items: start; }
+    .booking-text h2 { font-family: var(--font-display); font-size: var(--fs-h2); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--fg); margin-top: var(--sp-2); margin-bottom: var(--sp-2); }
+    .booking-text p { font-size: var(--fs-lead); color: var(--fg-dim); line-height: 1.6; margin-bottom: var(--sp-4); }
+    .booking-steps { display: flex; flex-direction: column; gap: var(--sp-2); margin-bottom: var(--sp-4); }
+    .booking-step { display: flex; align-items: center; gap: var(--sp-2); font-size: var(--fs-sm); color: var(--fg-dim); }
+    .step-num { width: 28px; height: 28px; background: var(--accent-soft); border: 1px solid rgba(168,90,31,0.3); border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: var(--accent); flex-shrink: 0; }
+    .booking-methods { display: flex; flex-direction: column; gap: 10px; margin-bottom: var(--sp-3); list-style: none; padding: 0; }
+    .booking-methods li { margin: 0; }
     .booking-method-btn {
-      display: flex;
-      align-items: center;
-      gap: var(--sp-2);
-      background: var(--bg);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 14px 18px;
-      transition: border-color 0.2s, transform 0.15s, background 0.2s;
-      cursor: pointer;
-      text-align: left;
-      width: 100%;
+      display: flex; align-items: center; gap: var(--sp-2); background: var(--bg); border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 14px 18px; transition: border-color 0.2s, transform 0.15s, background 0.2s;
+      cursor: pointer; text-align: left; width: 100%;
     }
-    .booking-method-btn:hover {
-      border-color: var(--accent);
-      background: var(--accent-soft);
-      transform: translateX(4px);
-    }
-    .booking-method-icon {
-      width: 40px;
-      height: 40px;
-      background: var(--accent-soft);
-      border-radius: 10px;
-      display: grid;
-      place-items: center;
-      color: var(--accent);
-      flex-shrink: 0;
-    }
-    .booking-method-text strong {
-      display: block;
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--fg);
-      margin-bottom: 2px;
-    }
-    .booking-method-text span {
-      font-size: var(--fs-xs);
-      color: var(--fg-dim);
-    }
-    .booking-method-arrow {
-      margin-left: auto;
-      color: var(--fg-dim);
-      transition: transform 0.2s, color 0.2s;
-    }
-    .booking-method-btn:hover .booking-method-arrow {
-      transform: translateX(4px);
-      color: var(--accent);
-    }
-
-    /* Booking Form Panel */
-    .booking-form-panel {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: var(--sp-4);
-      position: relative;
-    }
-    .booking-form-panel::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--green-light));
-      border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-    }
-    .form-title {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--fg);
-      margin-bottom: 4px;
-    }
-    .form-subtitle {
-      font-size: var(--fs-sm);
-      color: var(--fg-dim);
-      margin-bottom: var(--sp-3);
-    }
-    .form-group {
-      margin-bottom: var(--sp-2);
-    }
-    .form-group label {
-      display: block;
-      font-size: var(--fs-xs);
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--fg-dim);
-      margin-bottom: 6px;
-    }
+    .booking-method-btn:hover { border-color: var(--accent); background: var(--accent-soft); transform: translateX(4px); }
+    .booking-method-icon { width: 40px; height: 40px; background: var(--accent-soft); border-radius: 10px; display: grid; place-items: center; color: var(--accent); flex-shrink: 0; }
+    .booking-method-text strong { display: block; font-size: 15px; font-weight: 700; color: var(--fg); margin-bottom: 2px; }
+    .booking-method-text span { font-size: var(--fs-xs); color: var(--fg-dim); }
+    .booking-method-arrow { margin-left: auto; color: var(--fg-dim); transition: transform 0.2s, color 0.2s; }
+    .booking-method-btn:hover .booking-method-arrow { transform: translateX(4px); color: var(--accent); }
+    .booking-form-panel { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: var(--sp-4); position: relative; }
+    .booking-form-panel::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--green-light)); border-radius: var(--radius-xl) var(--radius-xl) 0 0; }
+    .form-title { font-family: var(--font-display); font-size: 20px; font-weight: 700; letter-spacing: -0.02em; color: var(--fg); margin-bottom: 4px; }
+    .form-subtitle { font-size: var(--fs-sm); color: var(--fg-dim); margin-bottom: var(--sp-3); }
+    .form-group { margin-bottom: var(--sp-2); }
+    .form-group label { display: block; font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 6px; }
     .form-control {
-      width: 100%;
-      background: var(--surface);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius);
-      padding: 11px 14px;
-      color: var(--fg);
-      font-size: 15px;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      outline: none;
-      appearance: none;
+      width: 100%; background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius);
+      padding: 11px 14px; color: var(--fg); font-size: 15px; transition: border-color 0.2s, box-shadow 0.2s; outline: none; appearance: none;
     }
-    .form-control:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-soft);
-    }
+    .form-control:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
     .form-control::placeholder { color: var(--fg-dim); opacity: 0.5; }
     .form-control option { background: var(--surface); color: var(--fg); }
     textarea.form-control { resize: vertical; min-height: 90px; line-height: 1.55; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2); }
     .form-submit { width: 100%; margin-top: var(--sp-2); text-align: center; }
-    .form-fine {
-      font-size: 11px;
-      color: var(--fg-dim);
-      text-align: center;
-      margin-top: 8px;
-      line-height: 1.5;
-    }
+    .form-fine { font-size: 11px; color: var(--fg-dim); text-align: center; margin-top: 8px; line-height: 1.5; }
     .form-fine a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
-    .form-success {
-      display: none;
-      text-align: center;
-      padding: var(--sp-5) var(--sp-3);
-    }
-    .form-success-icon {
-      width: 56px;
-      height: 56px;
-      background: var(--green-glow);
-      border: 1px solid var(--border);
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: var(--green-light);
-      margin: 0 auto var(--sp-3);
-    }
-    .form-success h3 {
-      font-family: var(--font-display);
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--fg);
-      margin-bottom: 8px;
-    }
+    .form-success { display: none; text-align: center; padding: var(--sp-5) var(--sp-3); }
+    .form-success-icon { width: 56px; height: 56px; background: var(--green-glow); border: 1px solid var(--border); border-radius: 50%; display: grid; place-items: center; color: var(--green-light); margin: 0 auto var(--sp-3); }
+    .form-success h3 { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--fg); margin-bottom: 8px; }
     .form-success p { font-size: var(--fs-sm); color: var(--fg-dim); }
-
-    /* ─── Service Area Map ───────────────────────────────────── */
     .service-area { background: var(--bg-mid); }
-    .service-area-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--sp-6);
-      align-items: center;
-    }
-    .area-map {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      overflow: hidden;
-      aspect-ratio: 1;
-      position: relative;
-    }
-    .area-map-inner {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    .area-cities {
-      display: flex;
-      flex-direction: column;
-      gap: var(--sp-1);
-    }
+    .service-area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-6); align-items: center; }
+    .area-map { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 1; position: relative; }
+    .area-map-inner { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; }
+    .area-cities { display: flex; flex-direction: column; gap: var(--sp-1); }
     .area-city {
-      display: flex;
-      align-items: center;
-      gap: var(--sp-2);
-      padding: 10px 14px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: var(--bg);
-      font-size: var(--fs-sm);
-      font-weight: 600;
-      color: var(--fg);
-      transition: border-color 0.2s, background 0.2s;
+      display: flex; align-items: center; gap: var(--sp-2); padding: 10px 14px; border-radius: var(--radius);
+      border: 1px solid var(--border); background: var(--bg); font-size: var(--fs-sm); font-weight: 600; color: var(--fg); transition: border-color 0.2s, background 0.2s;
     }
     .area-city:hover { border-color: var(--accent); background: var(--accent-soft); }
-    .area-city.primary {
-      border-color: rgba(200,112,42,0.4);
-      background: var(--accent-soft);
-    }
+    .area-city.primary { border-color: rgba(168,90,31,0.4); background: var(--accent-soft); }
     .area-city.primary .area-dot { background: var(--accent); }
-    .area-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--green-light);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .area-text h2 {
-      font-family: var(--font-display);
-      font-size: var(--fs-h2);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      line-height: 1.05;
-      color: var(--fg);
-      margin-top: var(--sp-2);
-      margin-bottom: var(--sp-2);
-    }
-    .area-text > p {
-      font-size: var(--fs-lead);
-      color: var(--fg-dim);
-      line-height: 1.6;
-      margin-bottom: var(--sp-4);
-    }
-
-    /* ─── Feedback Section ───────────────────────────────────── */
+    .area-dot { width: 8px; height: 8px; background: var(--green-light); border-radius: 50%; flex-shrink: 0; }
+    .area-text h2 { font-family: var(--font-display); font-size: var(--fs-h2); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--fg); margin-top: var(--sp-2); margin-bottom: var(--sp-2); }
+    .area-text > p { font-size: var(--fs-lead); color: var(--fg-dim); line-height: 1.6; margin-bottom: var(--sp-4); }
     .feedback { background: var(--bg); }
-    .feedback-inner {
-      max-width: 640px;
-      margin-inline: auto;
-      text-align: center;
-    }
-    .feedback-inner h2 {
-      font-family: var(--font-display);
-      font-size: var(--fs-h2);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      color: var(--fg);
-      margin-top: var(--sp-2);
-      margin-bottom: var(--sp-2);
-    }
-    .feedback-inner > p {
-      font-size: var(--fs-lead);
-      color: var(--fg-dim);
-      margin-bottom: var(--sp-4);
-    }
-    .feedback-form {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: var(--sp-4);
-      text-align: left;
-    }
-    .rating-row {
-      display: flex;
-      gap: 8px;
-      margin-bottom: var(--sp-3);
-    }
-    .rating-star {
-      font-size: 28px;
-      cursor: pointer;
-      color: var(--border);
-      transition: color 0.15s, transform 0.1s;
-      user-select: none;
-    }
-    .rating-star:hover,
-    .rating-star.active { color: #f5b942; transform: scale(1.15); }
-
-    /* ─── Final CTA Strip ────────────────────────────────────── */
-    .final-cta {
-      background: linear-gradient(135deg, var(--surface) 0%, rgba(200,112,42,0.08) 100%);
-      border-top: 1px solid var(--border);
-    }
-    .final-cta-inner {
-      text-align: center;
-      max-width: 680px;
-      margin-inline: auto;
-    }
-    .final-cta-inner h2 {
-      font-family: var(--font-display);
-      font-size: clamp(32px, 5vw, 58px);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.0;
-      color: var(--fg);
-      margin-bottom: var(--sp-3);
-    }
-    .final-cta-inner h2 em {
-      font-style: normal;
-      color: var(--accent);
-    }
-    .final-cta-inner p {
-      font-size: var(--fs-lead);
-      color: var(--fg-dim);
-      margin-bottom: var(--sp-4);
-      line-height: 1.6;
-    }
-    .final-cta-btns {
-      display: flex;
-      gap: var(--sp-2);
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    /* ─── Footer ─────────────────────────────────────────────── */
-    .pagefoot {
-      background: var(--bg);
-      border-top: 1px solid var(--border);
-      padding-block: var(--sp-6);
-    }
-    .foot-grid {
-      display: grid;
-      grid-template-columns: 1.8fr 1fr 1fr 1fr;
-      gap: var(--sp-5);
-      margin-bottom: var(--sp-5);
-    }
+    .feedback-inner { max-width: 640px; margin-inline: auto; text-align: center; }
+    .feedback-inner h2 { font-family: var(--font-display); font-size: var(--fs-h2); font-weight: 800; letter-spacing: -0.025em; color: var(--fg); margin-top: var(--sp-2); margin-bottom: var(--sp-2); }
+    .feedback-inner > p { font-size: var(--fs-lead); color: var(--fg-dim); margin-bottom: var(--sp-4); }
+    .feedback-form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: var(--sp-4); text-align: left; }
+    .rating-row { display: flex; gap: 8px; margin-bottom: var(--sp-3); }
+    .rating-star { font-size: 28px; cursor: pointer; color: var(--border); transition: color 0.15s, transform 0.1s; user-select: none; }
+    .rating-star:hover, .rating-star.active { color: #f5b942; transform: scale(1.15); }
+    .final-cta { background: linear-gradient(135deg, var(--surface) 0%, rgba(168,90,31,0.08) 100%); border-top: 1px solid var(--border); }
+    .final-cta-inner { text-align: center; max-width: 680px; margin-inline: auto; }
+    .final-cta-inner h2 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 58px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.0; color: var(--fg); margin-bottom: var(--sp-3); }
+    .final-cta-inner h2 em { font-style: normal; color: var(--accent); }
+    .final-cta-inner p { font-size: var(--fs-lead); color: var(--fg-dim); margin-bottom: var(--sp-4); line-height: 1.6; }
+    .final-cta-btns { display: flex; gap: var(--sp-2); justify-content: center; flex-wrap: wrap; }
+    .pagefoot { background: var(--bg); border-top: 1px solid var(--border); padding-block: var(--sp-6); }
+    .foot-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: var(--sp-5); margin-bottom: var(--sp-5); }
     .foot-brand .nav-logo { margin-bottom: var(--sp-2); }
-    .foot-brand p {
-      font-size: var(--fs-sm);
-      color: var(--fg-dim);
-      line-height: 1.65;
-      max-width: 32ch;
-      margin-bottom: var(--sp-3);
-    }
-    .foot-social {
-      display: flex;
-      gap: 10px;
-    }
+    .foot-brand p { font-size: var(--fs-sm); color: var(--fg-dim); line-height: 1.65; max-width: 32ch; margin-bottom: var(--sp-3); }
+    .foot-social { display: flex; gap: 10px; }
     .social-btn {
-      width: 36px;
-      height: 36px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      display: grid;
-      place-items: center;
-      color: var(--fg-dim);
-      transition: color 0.15s, border-color 0.15s, background 0.15s;
+      width: 36px; height: 36px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+      display: grid; place-items: center; color: var(--fg-dim); transition: color 0.15s, border-color 0.15s, background 0.15s;
     }
-    .social-btn:hover {
-      color: var(--accent);
-      border-color: var(--accent);
-      background: var(--accent-soft);
-    }
-    .foot-col h4 {
-      font-size: var(--fs-xs);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--fg-dim);
-      margin-bottom: var(--sp-2);
-    }
+    .social-btn:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+    .foot-col h3, .foot-col h4 { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: var(--sp-2); }
     .foot-col ul { list-style: none; }
     .foot-col li + li { margin-top: 10px; }
-    .foot-col a {
-      font-size: var(--fs-sm);
-      color: var(--fg-dim);
-      transition: color 0.15s;
-    }
+    .foot-col a { font-size: var(--fs-sm); color: var(--fg-dim); transition: color 0.15s; }
     .foot-col a:hover { color: var(--fg); }
-    .foot-bottom {
-      padding-top: var(--sp-4);
-      border-top: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: var(--sp-2);
-    }
-    .foot-bottom p {
-      font-size: var(--fs-xs);
-      color: var(--fg-dim);
-      line-height: 1.6;
-    }
-    .foot-legal {
-      display: flex;
-      gap: var(--sp-3);
-    }
-    .foot-legal a {
-      font-size: var(--fs-xs);
-      color: var(--fg-dim);
-      transition: color 0.15s;
-    }
+    .foot-bottom { padding-top: var(--sp-4); border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--sp-2); }
+    .foot-bottom p { font-size: var(--fs-xs); color: var(--fg-dim); line-height: 1.6; }
+    .foot-legal { display: flex; gap: var(--sp-3); }
+    .foot-legal a { font-size: var(--fs-xs); color: var(--fg-dim); transition: color 0.15s; }
     .foot-legal a:hover { color: var(--fg); }
-
-    /* ─── Scroll-reveal animations ───────────────────────────── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity 0.55s ease, transform 0.55s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: none;
-    }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
     .reveal-delay-1 { transition-delay: 0.1s; }
     .reveal-delay-2 { transition-delay: 0.2s; }
     .reveal-delay-3 { transition-delay: 0.3s; }
     .reveal-delay-4 { transition-delay: 0.4s; }
-
-    /* ─── Back to top ────────────────────────────────────────── */
     .back-top {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      width: 44px;
-      height: 44px;
-      background: var(--accent);
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      cursor: pointer;
-      opacity: 0;
-      transform: translateY(12px);
-      transition: opacity 0.25s, transform 0.25s, background 0.2s;
-      z-index: 90;
-      box-shadow: 0 4px 16px rgba(200,112,42,0.4);
-      border: none;
+      position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px; background: var(--accent); border-radius: 50%;
+      display: grid; place-items: center; color: #fff; cursor: pointer; opacity: 0; transform: translateY(12px);
+      transition: opacity 0.25s, transform 0.25s, background 0.2s; z-index: 90; box-shadow: 0 4px 16px rgba(168,90,31,0.4); border: none;
     }
     .back-top.visible { opacity: 1; transform: none; }
     .back-top:hover { background: var(--accent-hi); }
-
-    /* ─── Responsive ─────────────────────────────────────────── */
     @media (max-width: 1024px) {
       .hero-grid { grid-template-columns: 1fr; gap: var(--sp-4); }
       .hero-quote-card { max-width: 480px; }
@@ -1458,13 +423,11 @@
 </head>
 <body>
 
-<!-- ══ EMERGENCY BANNER ══════════════════════════════════════ -->
 <div class="emergency-bar" role="alert">
   <div class="pulse-dot" aria-hidden="true"></div>
   <span>24/7 Emergency Storm Response — <a href="tel:+12293415953">Call Now: (229) 341-5953</a></span>
 </div>
 
-<!-- ══ NAVIGATION ════════════════════════════════════════════ -->
 <header id="topnav" role="banner">
   <div class="container nav-inner">
     <a href="#home" class="nav-logo" aria-label="Specialty Tree Service — Home">
@@ -1475,7 +438,6 @@
       </div>
       <span>Specialty Tree Service</span>
     </a>
-
     <nav aria-label="Main navigation">
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
@@ -1485,7 +447,6 @@
         <li><a href="#service-area">Service Area</a></li>
       </ul>
     </nav>
-
     <div class="nav-cta">
       <a href="tel:+12293415953" class="nav-phone" aria-label="Call us at 229-341-5953">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -1493,14 +454,12 @@
       </a>
       <a href="#booking" class="btn btn-primary btn-sm">Free Estimate</a>
     </div>
-
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<!-- Mobile Menu -->
 <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
   <button class="mobile-menu-close" id="menu-close" aria-label="Close menu">&#x2715;</button>
   <a href="#services" class="mobile-link">Services</a>
@@ -1510,24 +469,16 @@
   <a href="#booking" class="mobile-link" style="color:var(--accent)">Free Estimate</a>
 </nav>
 
-<!-- ══ HERO ═══════════════════════════════════════════════════ -->
 <main id="main-content">
 <section id="home" class="hero" aria-labelledby="hero-heading">
   <div class="hero-bg" id="hero-bg" role="img" aria-label="Arborist in safety gear cutting a tree with a chainsaw"></div>
   <div class="hero-overlay" aria-hidden="true"></div>
-
   <div class="container hero-content">
     <div class="hero-grid">
       <div class="hero-text">
         <p class="eyebrow reveal">Valdosta, GA &amp; Lowndes County · Est. 1980</p>
-        <h1 id="hero-heading" class="hero-headline reveal reveal-delay-1">
-          South Georgia's
-          <em>Hazardous Tree</em>
-          Specialists
-        </h1>
-        <p class="hero-lead reveal reveal-delay-2">
-          Founded by Mike Boggan in 1980. We tackle the jobs others turn down. Fully equipped with cranes, bucket trucks, and bobcats for safe, precise tree removal and storm cleanup for commercial and residential properties.
-        </p>
+        <h1 id="hero-heading" class="hero-headline reveal reveal-delay-1">South Georgia's <em>Hazardous Tree</em> Specialists</h1>
+        <p class="hero-lead reveal reveal-delay-2">Founded by Mike Boggan in 1980. We tackle the jobs others turn down. Fully equipped with cranes, bucket trucks, and bobcats for safe, precise tree removal and storm cleanup for commercial and residential properties.</p>
         <div class="hero-cta-row reveal reveal-delay-3">
           <a href="#booking" class="btn btn-primary btn-lg">Get a Free Estimate</a>
           <a href="tel:+12293415953" class="btn btn-outline btn-lg">
@@ -1536,106 +487,42 @@
           </a>
         </div>
         <div class="trust-pills reveal reveal-delay-4">
-          <span class="trust-pill">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Fully Licensed &amp; Insured
-          </span>
-          <span class="trust-pill">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Est. 1980
-          </span>
-          <span class="trust-pill">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
-            Commercial &amp; Residential
-          </span>
+          <span class="trust-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Fully Licensed &amp; Insured</span>
+          <span class="trust-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Est. 1980</span>
+          <span class="trust-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>Commercial &amp; Residential</span>
         </div>
       </div>
-
-      <!-- Social proof card with real review -->
       <div class="hero-quote-card reveal reveal-delay-2" role="complementary" aria-label="Customer review">
-        <div class="hqc-stars" aria-label="5 out of 5 stars">
-          <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
-          <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
-          <span class="star" aria-hidden="true">★</span>
+        <div class="hqc-stars" role="img" aria-label="5 out of 5 stars">
+          <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
         </div>
         <p class="hqc-quote">"They were in and out of my yard in about 3 hours and left an immaculate clean look to my property and yard after the tree removal!"</p>
         <p class="hqc-author">— Alyson Summers · Google Review</p>
         <div class="hqc-divider" aria-hidden="true"></div>
         <div class="hqc-stats" aria-label="Business statistics">
-          <div>
-            <span class="hqc-stat-num">5.0</span>
-            <span class="hqc-stat-label">Google Rating</span>
-          </div>
-          <div>
-            <span class="hqc-stat-num">44+</span>
-            <span class="hqc-stat-label">Years in Business</span>
-          </div>
-          <div>
-            <span class="hqc-stat-num">24/7</span>
-            <span class="hqc-stat-label">Emergency Line</span>
-          </div>
+          <div><span class="hqc-stat-num">5.0</span><span class="hqc-stat-label">Google Rating</span></div>
+          <div><span class="hqc-stat-num">44+</span><span class="hqc-stat-label">Years in Business</span></div>
+          <div><span class="hqc-stat-num">24/7</span><span class="hqc-stat-label">Emergency Line</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ TRUST BAR ══════════════════════════════════════════════ -->
 <div class="trust-bar" aria-label="Trust credentials">
   <div class="container trust-bar-inner">
-    <div class="trust-item">
-      <div class="trust-icon" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
-      <div>
-        <strong>Fully Licensed</strong>
-        <small>Lowndes County Certified</small>
-      </div>
-    </div>
+    <div class="trust-item"><div class="trust-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><strong>Fully Licensed</strong><small>Lowndes County Certified</small></div></div>
     <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-item">
-      <div class="trust-icon" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-      </div>
-      <div>
-        <strong>Fully Insured</strong>
-        <small>General Liability + Workers' Comp</small>
-      </div>
-    </div>
+    <div class="trust-item"><div class="trust-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div><strong>Fully Insured</strong><small>General Liability + Workers' Comp</small></div></div>
     <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-item">
-      <div class="trust-icon" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-      </div>
-      <div>
-        <strong>24/7 Emergency Service</strong>
-        <small>Storm response day or night</small>
-      </div>
-    </div>
+    <div class="trust-item"><div class="trust-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><strong>24/7 Emergency Service</strong><small>Storm response day or night</small></div></div>
     <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-item">
-      <div class="trust-icon" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-      </div>
-      <div>
-        <strong>Locally Owned</strong>
-        <small>Family-operated since 1980</small>
-      </div>
-    </div>
+    <div class="trust-item"><div class="trust-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div><strong>Locally Owned</strong><small>Family-operated since 1980</small></div></div>
     <div class="trust-bar-divider" aria-hidden="true"></div>
-    <div class="trust-item">
-      <div class="trust-icon" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-      </div>
-      <div>
-        <strong>Free Estimates</strong>
-        <small>No obligation, same-day response</small>
-      </div>
-    </div>
+    <div class="trust-item"><div class="trust-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Free Estimates</strong><small>No obligation, same-day response</small></div></div>
   </div>
 </div>
 
-<!-- ══ SERVICES ═══════════════════════════════════════════════ -->
 <section id="services" class="section services" aria-labelledby="services-heading">
   <div class="container">
     <div class="section-header reveal">
@@ -1644,192 +531,74 @@
       <p>From routine trimming to complex hazardous removals, our specialized crew and heavy equipment handle every tree challenge safely and efficiently.</p>
     </div>
     <div class="services-grid">
-
-      <!-- Hazardous Tree Removal -->
       <article class="service-card featured reveal reveal-delay-1">
         <span class="service-badge">Most Requested</span>
-        <div class="service-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 8C8 10 5.9 16.17 3.82 22H2l1-3.5-5 1.5L9 13c0 0 2-5 8-5z"/><path d="M14.5 6.5l4.5-4.5"/>
-          </svg>
-        </div>
+        <div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 22H2l1-3.5-5 1.5L9 13c0 0 2-5 8-5z"/><path d="M14.5 6.5l4.5-4.5"/></svg></div>
         <h3>Hazardous & Crane-Assisted Removal</h3>
         <p>Safe dismantling of dangerous, dead, or unstable trees of any size. We utilize specialized rigging, cranes, and bucket trucks to protect your home, business, and landscape.</p>
-        <div class="service-tags">
-          <span class="tag">Hazardous Trees</span>
-          <span class="tag">Crane Assistance</span>
-          <span class="tag">Tight Spaces</span>
-          <span class="tag">Commercial</span>
-        </div>
+        <div class="service-tags"><span class="tag">Hazardous Trees</span><span class="tag">Crane Assistance</span><span class="tag">Tight Spaces</span><span class="tag">Commercial</span></div>
       </article>
-
-      <!-- Tree Trimming -->
       <article class="service-card reveal reveal-delay-2">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
-          </svg>
-        </div>
+        <div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
         <h3>Bucket Truck Trimming &amp; Pruning</h3>
         <p>Crown reduction, deadwooding, and structural pruning. Our bucket trucks allow us to safely reach and eliminate weak limbs over rooftops and power lines.</p>
-        <div class="service-tags">
-          <span class="tag">Crown Reduction</span>
-          <span class="tag">Deadwooding</span>
-          <span class="tag">Power Line Clearance</span>
-        </div>
+        <div class="service-tags"><span class="tag">Crown Reduction</span><span class="tag">Deadwooding</span><span class="tag">Power Line Clearance</span></div>
       </article>
-
-      <!-- Stump Grinding -->
       <article class="service-card reveal reveal-delay-3">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-          </svg>
-        </div>
+        <div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
         <h3>Stump Grinding</h3>
         <p>Complete stump elimination using commercial-grade grinders — clearing your yard of tripping hazards, pest harborage, and eyesores down to ground level or below.</p>
-        <div class="service-tags">
-          <span class="tag">Full Site Clearing</span>
-          <span class="tag">Residential</span>
-          <span class="tag">Commercial Lots</span>
-        </div>
+        <div class="service-tags"><span class="tag">Full Site Clearing</span><span class="tag">Residential</span><span class="tag">Commercial Lots</span></div>
       </article>
-
-      <!-- Emergency Storm Cleanup -->
       <article class="service-card reveal reveal-delay-1">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-          </svg>
-        </div>
+        <div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
         <h3>24/7 Storm Debris Removal</h3>
         <p>When a storm drops a tree on your property or blocks access, we respond immediately with heavy equipment to restore safety, clear debris, and haul it away.</p>
-        <div class="service-tags">
-          <span class="tag">24/7 Response</span>
-          <span class="tag">Fallen Trees</span>
-          <span class="tag">Roof Damage</span>
-          <span class="tag">Debris Hauling</span>
-        </div>
+        <div class="service-tags"><span class="tag">24/7 Response</span><span class="tag">Fallen Trees</span><span class="tag">Roof Damage</span><span class="tag">Debris Hauling</span></div>
       </article>
-
-      <!-- Land Clearing -->
       <article class="service-card reveal reveal-delay-2">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/>
-          </svg>
-        </div>
+        <div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg></div>
         <h3>Bobcat Land Clearing</h3>
         <p>Residential lot clearing, fence-line cleanouts, and commercial site preparation. Our bobcat services efficiently remove brush, small trees, and debris.</p>
-        <div class="service-tags">
-          <span class="tag">Lot Clearing</span>
-          <span class="tag">Bobcat Services</span>
-          <span class="tag">Site Prep</span>
-        </div>
+        <div class="service-tags"><span class="tag">Lot Clearing</span><span class="tag">Bobcat Services</span><span class="tag">Site Prep</span></div>
       </article>
-
-      <!-- Debris Removal -->
       <article class="service-card reveal reveal-delay-3">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/>
-          </svg>
-        </div>
+        <div class="service-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg></div>
         <h3>Debris Removal &amp; Hauling</h3>
         <p>Complete cleanup and haul-away of logs, brush, and wood chips after any tree work — leaving your commercial or residential property clean and debris-free.</p>
-        <div class="service-tags">
-          <span class="tag">Full Haul-Away</span>
-          <span class="tag">Log Splitting</span>
-          <span class="tag">Commercial Chippers</span>
-        </div>
+        <div class="service-tags"><span class="tag">Full Haul-Away</span><span class="tag">Log Splitting</span><span class="tag">Commercial Chippers</span></div>
       </article>
-
     </div>
   </div>
 </section>
 
-<!-- ══ STATS ROW ══════════════════════════════════════════════ -->
 <div class="stats-row" aria-label="Business statistics">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat-cell reveal">
-        <span class="stat-num" aria-label="5.0 star rating">5.0<span style="font-size:0.5em;vertical-align:super;color:var(--fg-dim)">★</span></span>
-        <p class="stat-label">Perfect Google rating from verified customers</p>
-      </div>
-      <div class="stat-cell reveal reveal-delay-1">
-        <span class="stat-num">24/7</span>
-        <p class="stat-label">Emergency storm response, day or night</p>
-      </div>
-      <div class="stat-cell reveal reveal-delay-2">
-        <span class="stat-num">100<span style="font-size:0.5em;color:var(--fg-dim)">%</span></span>
-        <p class="stat-label">Free, no-obligation estimates on all jobs</p>
-      </div>
-      <div class="stat-cell reveal reveal-delay-3">
-        <span class="stat-num">44+</span>
-        <p class="stat-label">Years of trusted service in South Georgia</p>
-      </div>
+      <div class="stat-cell reveal"><span class="stat-num" aria-label="5.0 star rating">5.0<span style="font-size:0.5em;vertical-align:super;color:var(--fg-dim)">★</span></span><p class="stat-label">Perfect Google rating from verified customers</p></div>
+      <div class="stat-cell reveal reveal-delay-1"><span class="stat-num">24/7</span><p class="stat-label">Emergency storm response, day or night</p></div>
+      <div class="stat-cell reveal reveal-delay-2"><span class="stat-num">100<span style="font-size:0.5em;color:var(--fg-dim)">%</span></span><p class="stat-label">Free, no-obligation estimates on all jobs</p></div>
+      <div class="stat-cell reveal reveal-delay-3"><span class="stat-num">44+</span><p class="stat-label">Years of trusted service in South Georgia</p></div>
     </div>
   </div>
 </div>
 
-<!-- ══ WHY CHOOSE US ══════════════════════════════════════════ -->
 <section id="why-us" class="section" aria-labelledby="why-heading">
   <div class="container">
     <div class="why-grid">
       <div class="why-img-wrap reveal">
-        <img
-          src="./images/why-us.jpg"
-          alt="Arborist safely cutting down a tree trunk with a chainsaw while wearing full safety gear"
-          loading="lazy"
-          width="900"
-          height="1100"
-        />
-        <div class="why-img-badge">
-          <div class="why-img-badge-num">A+</div>
-          <div class="why-img-badge-label">Safety Record</div>
-        </div>
+        <img src="./images/why-us.jpg" alt="Arborist safely cutting down a tree trunk with a chainsaw while wearing full safety gear" loading="lazy" width="900" height="1100" />
+        <div class="why-img-badge"><div class="why-img-badge-num">A+</div><div class="why-img-badge-label">Safety Record</div></div>
       </div>
       <div class="why-text reveal reveal-delay-1">
         <span class="eyebrow">Why Choose Us</span>
         <h2 id="why-heading">Not Just Tree Work — Peace of Mind</h2>
         <p>Founded by Mike Boggan in 1980, Specialty Tree Service isn't a fly-by-night storm chaser. We are a dedicated, locally rooted South Georgia crew with over four decades of experience, the right equipment, and the insurance to do the job right — the first time.</p>
         <ul class="why-list" aria-label="Key advantages">
-          <li class="why-item">
-            <div class="why-check" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div class="why-item-text">
-              <strong>Licensed &amp; Fully Insured</strong>
-              <span>We carry General Liability and Workers' Compensation insurance — protecting you from liability on every job, no exceptions.</span>
-            </div>
-          </li>
-          <li class="why-item">
-            <div class="why-check" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div class="why-item-text">
-              <strong>Heavy Equipment for Hazardous Jobs</strong>
-              <span>We specialize in the jobs others turn down. Fully equipped with bucket trucks, cranes, bobcats, and commercial chippers to safely dismantle dangerous trees in tight residential or large commercial spaces.</span>
-            </div>
-          </li>
-          <li class="why-item">
-            <div class="why-check" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div class="why-item-text">
-              <strong>Jobsite Cleanliness</strong>
-              <span>We don't leave until your yard is clean. Every job includes debris removal — we haul away everything so you're left with a pristine property.</span>
-            </div>
-          </li>
-          <li class="why-item">
-            <div class="why-check" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div class="why-item-text">
-              <strong>South Georgia Tree Expertise</strong>
-              <span>We know local species — loblolly pines, water oaks, sweetgums — and how South Georgia's soil and storm patterns affect their stability.</span>
-            </div>
-          </li>
+          <li class="why-item"><div class="why-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-item-text"><strong>Licensed &amp; Fully Insured</strong><span>We carry General Liability and Workers' Compensation insurance — protecting you from liability on every job, no exceptions.</span></div></li>
+          <li class="why-item"><div class="why-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-item-text"><strong>Heavy Equipment for Hazardous Jobs</strong><span>We specialize in the jobs others turn down. Fully equipped with bucket trucks, cranes, bobcats, and commercial chippers to safely dismantle dangerous trees in tight residential or large commercial spaces.</span></div></li>
+          <li class="why-item"><div class="why-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-item-text"><strong>Jobsite Cleanliness</strong><span>We don't leave until your yard is clean. Every job includes debris removal — we haul away everything so you're left with a pristine property.</span></div></li>
+          <li class="why-item"><div class="why-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-item-text"><strong>South Georgia Tree Expertise</strong><span>We know local species — loblolly pines, water oaks, sweetgums — and how South Georgia's soil and storm patterns affect their stability.</span></div></li>
         </ul>
         <a href="#booking" class="btn btn-primary">Schedule a Free Estimate</a>
       </div>
@@ -1837,7 +606,6 @@
   </div>
 </section>
 
-<!-- ══ GALLERY ════════════════════════════════════════════════ -->
 <section id="gallery" class="section gallery" aria-labelledby="gallery-heading">
   <div class="container">
     <div class="section-header reveal">
@@ -1846,78 +614,16 @@
       <p>Every project is a commitment to safety, precision, and a clean finish. Browse recent jobs from Valdosta and surrounding communities.</p>
     </div>
     <div class="gallery-grid" role="list">
-
-      <div class="gallery-item tall reveal" role="listitem">
-        <div class="aspect-tall">
-          <img
-            src="./images/gallery-1.jpg"
-            alt="Professional arborist climbing a tall tree for maintenance work"
-            loading="lazy" width="800" height="1067"
-          />
-        </div>
-        <div class="gallery-caption">Aerial climbing — hazardous residential removal</div>
-      </div>
-
-      <div class="gallery-item wide reveal reveal-delay-1" role="listitem">
-        <div class="aspect-wide">
-          <img
-            src="./images/hero-bg.jpg"
-            alt="Skilled arborist wearing safety gear cutting a tree with a chainsaw"
-            loading="lazy" width="1000" height="563"
-          />
-        </div>
-        <div class="gallery-caption">Crane-assisted removal with safety rigging</div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-2" role="listitem">
-        <div class="aspect-sq">
-          <img
-            src="./images/gallery-3.jpg"
-            alt="Professional crew member using chainsaw to cut branches"
-            loading="lazy" width="700" height="700"
-          />
-        </div>
-        <div class="gallery-caption">Storm debris cleanup — emergency response</div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-3" role="listitem">
-        <div class="aspect-sq">
-          <img
-            src="./images/gallery-4.jpg"
-            alt="Tree surgeon pruning branches with a chainsaw secured by ropes"
-            loading="lazy" width="700" height="700"
-          />
-        </div>
-        <div class="gallery-caption">Bucket truck pruning — commercial property</div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-1" role="listitem">
-        <div class="aspect-sq">
-          <img
-           src="./images/gallery-5.jpg"
-            alt="Chainsaw operator safely cutting through a tree in a forested area"
-            loading="lazy" width="700" height="700"
-          />
-        </div>
-        <div class="gallery-caption">Bobcat land clearing — residential lot</div>
-      </div>
-
-      <div class="gallery-item reveal reveal-delay-2" role="listitem">
-        <div class="aspect-sq">
-          <img
-            src="./images/gallery-6.jpg"
-            alt="Lumberjack using a chainsaw to cut logs with sawdust flying"
-            loading="lazy" width="700" height="700"
-          />
-        </div>
-        <div class="gallery-caption">Commercial chipper — post-removal cleanup</div>
-      </div>
-
+      <div class="gallery-item tall reveal" role="listitem"><div class="aspect-tall"><img src="./images/gallery-1.jpg" alt="Professional arborist climbing a tall tree for maintenance work" loading="lazy" width="800" height="1067" /></div><div class="gallery-caption">Aerial climbing — hazardous residential removal</div></div>
+      <div class="gallery-item wide reveal reveal-delay-1" role="listitem"><div class="aspect-wide"><img src="./images/hero-bg.jpg" alt="Skilled arborist wearing safety gear cutting a tree with a chainsaw" loading="lazy" width="1000" height="563" /></div><div class="gallery-caption">Crane-assisted removal with safety rigging</div></div>
+      <div class="gallery-item reveal reveal-delay-2" role="listitem"><div class="aspect-sq"><img src="./images/gallery-3.jpg" alt="Professional crew member using chainsaw to cut branches" loading="lazy" width="700" height="700" /></div><div class="gallery-caption">Storm debris cleanup — emergency response</div></div>
+      <div class="gallery-item reveal reveal-delay-3" role="listitem"><div class="aspect-sq"><img src="./images/gallery-4.jpg" alt="Tree surgeon pruning branches with a chainsaw secured by ropes" loading="lazy" width="700" height="700" /></div><div class="gallery-caption">Bucket truck pruning — commercial property</div></div>
+      <div class="gallery-item reveal reveal-delay-1" role="listitem"><div class="aspect-sq"><img src="./images/gallery-5.jpg" alt="Chainsaw operator safely cutting through a tree in a forested area" loading="lazy" width="700" height="700" /></div><div class="gallery-caption">Bobcat land clearing — residential lot</div></div>
+      <div class="gallery-item reveal reveal-delay-2" role="listitem"><div class="aspect-sq"><img src="./images/gallery-6.jpg" alt="Lumberjack using a chainsaw to cut logs with sawdust flying" loading="lazy" width="700" height="700" /></div><div class="gallery-caption">Commercial chipper — post-removal cleanup</div></div>
     </div>
   </div>
 </section>
 
-<!-- ══ REVIEWS ════════════════════════════════════════════════ -->
 <section id="reviews" class="section reviews" aria-labelledby="reviews-heading">
   <div class="container">
     <div class="section-header reveal">
@@ -1925,138 +631,77 @@
       <h2 id="reviews-heading">Real Reviews from Real Customers</h2>
       <p>We believe in honest feedback. Here's what our customers are saying.</p>
     </div>
-
-    <!-- Single Featured Review -->
     <div class="reviews-grid">
       <article class="review-card reveal" aria-label="Review from Alyson Summers">
-        <div class="review-stars" aria-label="5 stars">
+        <div class="review-stars" role="img" aria-label="5 stars">
           <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
         </div>
         <p class="review-text">"They were in and out of my yard in about 3 hours and left an immaculate clean look to my property and yard after the tree removal!"</p>
         <div class="review-footer">
           <div class="review-avatar" aria-hidden="true">AS</div>
-          <div class="review-author">
-            <strong>Alyson Summers</strong>
-            <span>Google Review · Verified Customer</span>
-          </div>
+          <div class="review-author"><strong>Alyson Summers</strong><span>Google Review · Verified Customer</span></div>
         </div>
       </article>
     </div>
-
-    <!-- Call to Action for More Reviews -->
     <div class="reviews-footer reveal">
       <div class="review-cta-box">
         <h3>Had Work Done by Us?</h3>
         <p>We'd love to hear your feedback. Your review helps other South Georgia homeowners find trusted tree care.</p>
         <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           Leave a Google Review
         </a>
       </div>
     </div>
-
-    <!-- Trust Pills (Alternative Social Proof) -->
     <div class="trust-pills reveal" style="justify-content: center; margin-top: var(--sp-4);">
-      <span class="trust-pill">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-        </svg>
-        44+ Years in Business
-      </span>
-      <span class="trust-pill">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        </svg>
-        Licensed &amp; Insured
-      </span>
-      <span class="trust-pill">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
-        </svg>
-        Local Owner-Operator
-      </span>
+      <span class="trust-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>44+ Years in Business</span>
+      <span class="trust-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</span>
+      <span class="trust-pill"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Local Owner-Operator</span>
     </div>
   </div>
 </section>
 
-<!-- ══ BOOKING / ESTIMATE ══════════════════════════════════════ -->
 <section id="booking" class="section booking" aria-labelledby="booking-heading">
   <div class="container">
     <div class="booking-grid">
-
       <div class="booking-text reveal">
         <span class="eyebrow">Get Started</span>
         <h2 id="booking-heading">Your Free Estimate is One Step Away</h2>
         <p>No sales pressure. No surprise fees. Just a straightforward assessment and honest quote from a local crew that has known South Georgia trees since 1980.</p>
-
         <div class="booking-steps" aria-label="How it works">
-          <div class="booking-step">
-            <div class="step-num" aria-hidden="true">1</div>
-            <span>Fill out the quick form or give us a call</span>
-          </div>
-          <div class="booking-step">
-            <div class="step-num" aria-hidden="true">2</div>
-            <span>We schedule a visit at your convenience — same day when available</span>
-          </div>
-          <div class="booking-step">
-            <div class="step-num" aria-hidden="true">3</div>
-            <span>Receive a written, itemized estimate at no cost or obligation</span>
-          </div>
+          <div class="booking-step"><div class="step-num" aria-hidden="true">1</div><span>Fill out the quick form or give us a call</span></div>
+          <div class="booking-step"><div class="step-num" aria-hidden="true">2</div><span>We schedule a visit at your convenience — same day when available</span></div>
+          <div class="booking-step"><div class="step-num" aria-hidden="true">3</div><span>Receive a written, itemized estimate at no cost or obligation</span></div>
         </div>
-
         <p style="font-size:14px;color:var(--fg-dim);margin-bottom:var(--sp-3)">Prefer to reach us directly?</p>
-        <div class="booking-methods" role="list">
-          <a href="tel:+12293415953" class="booking-method-btn" role="listitem" aria-label="Call us at (229) 341-5953">
-            <div class="booking-method-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            </div>
-            <div class="booking-method-text">
-              <strong>Call Us</strong>
-              <span>(229) 341-5953 · Mon–Fri 7am–7pm, 24/7 for emergencies</span>
-            </div>
-            <svg class="booking-method-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-          </a>
-          <a href="sms:+12293415953?body=Hi%20Mike%2C%20I%20need%20a%20free%20tree%20estimate%20from%20Specialty%20Tree%20Service." class="booking-method-btn" role="listitem" aria-label="Text us at (229) 341-5953">
-            <div class="booking-method-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-              </svg>
-            </div>
-            <div class="booking-method-text">
-              <strong>Text Us Directly</strong>
-              <span>(229) 341-5953 · Tap on mobile to start a text</span>
-            </div>
-            <svg class="booking-method-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-          </a>
-        </div>
+        <ul class="booking-methods">
+          <li>
+            <a href="tel:+12293415953" class="booking-method-btn" aria-label="Call us at (229) 341-5953">
+              <div class="booking-method-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+              <div class="booking-method-text"><strong>Call Us</strong><span>(229) 341-5953 · Mon–Fri 7am–7pm, 24/7 for emergencies</span></div>
+              <svg class="booking-method-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="sms:+12293415953?body=Hi%20Mike%2C%20I%20need%20a%20free%20tree%20estimate%20from%20Specialty%20Tree%20Service." class="booking-method-btn" aria-label="Text us at (229) 341-5953">
+              <div class="booking-method-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+              <div class="booking-method-text"><strong>Text Us Directly</strong><span>(229) 341-5953 · Tap on mobile to start a text</span></div>
+              <svg class="booking-method-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <!-- Estimate Request Form -->
       <div class="booking-form-panel reveal reveal-delay-1">
         <div id="estimate-form-wrap">
           <h3 class="form-title">Request a Free Estimate</h3>
           <p class="form-subtitle">We'll reach out within 2 hours during business hours.</p>
           <form id="estimate-form" novalidate aria-label="Estimate request form">
             <div class="form-row">
-              <div class="form-group">
-                <label for="est-fname">First Name <span aria-hidden="true" style="color:var(--accent)">*</span></label>
-                <input class="form-control" type="text" id="est-fname" name="first_name" placeholder="John" autocomplete="given-name" required />
-              </div>
-              <div class="form-group">
-                <label for="est-lname">Last Name</label>
-                <input class="form-control" type="text" id="est-lname" name="last_name" placeholder="Smith" autocomplete="family-name" />
-              </div>
+              <div class="form-group"><label for="est-fname">First Name <span aria-hidden="true" style="color:var(--accent)">*</span></label><input class="form-control" type="text" id="est-fname" name="first_name" placeholder="John" autocomplete="given-name" required /></div>
+              <div class="form-group"><label for="est-lname">Last Name</label><input class="form-control" type="text" id="est-lname" name="last_name" placeholder="Smith" autocomplete="family-name" /></div>
             </div>
-            <div class="form-group">
-              <label for="est-phone">Phone Number <span aria-hidden="true" style="color:var(--accent)">*</span></label>
-              <input class="form-control" type="tel" id="est-phone" name="phone" placeholder="(229) 341-5953" autocomplete="tel" required />
-            </div>
-            <div class="form-group">
-              <label for="est-email">Email Address</label>
-              <input class="form-control" type="email" id="est-email" name="email" placeholder="john@example.com" autocomplete="email" />
-            </div>
+            <div class="form-group"><label for="est-phone">Phone Number <span aria-hidden="true" style="color:var(--accent)">*</span></label><input class="form-control" type="tel" id="est-phone" name="phone" placeholder="(229) 341-5953" autocomplete="tel" required /></div>
+            <div class="form-group"><label for="est-email">Email Address</label><input class="form-control" type="email" id="est-email" name="email" placeholder="john@example.com" autocomplete="email" /></div>
             <div class="form-group">
               <label for="est-service">Service Needed <span aria-hidden="true" style="color:var(--accent)">*</span></label>
               <select class="form-control" id="est-service" name="service" required>
@@ -2070,51 +715,33 @@
                 <option value="other">Other / Not Sure</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="est-address">Property Address</label>
-              <input class="form-control" type="text" id="est-address" name="address" placeholder="123 Magnolia Dr, Valdosta, GA" autocomplete="street-address" />
-            </div>
-            <div class="form-group">
-              <label for="est-notes">Describe the Situation</label>
-              <textarea class="form-control" id="est-notes" name="notes" placeholder="E.g. large pine leaning toward house, approx. 60ft tall, needs full removal and stump grinding…"></textarea>
-            </div>
+            <div class="form-group"><label for="est-address">Property Address</label><input class="form-control" type="text" id="est-address" name="address" placeholder="123 Magnolia Dr, Valdosta, GA" autocomplete="street-address" /></div>
+            <div class="form-group"><label for="est-notes">Describe the Situation</label><textarea class="form-control" id="est-notes" name="notes" placeholder="E.g. large pine leaning toward house, approx. 60ft tall, needs full removal and stump grinding…"></textarea></div>
             <div class="form-submit">
-              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                Send Estimate Request
-              </button>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>Send Estimate Request</button>
               <p class="form-fine">By submitting, you agree to our <a href="#privacy">Privacy Policy</a>. We never sell your information.</p>
             </div>
           </form>
         </div>
         <div class="form-success" id="form-success" role="alert" aria-live="polite">
-          <div class="form-success-icon" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
+          <div class="form-success-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
           <h3>Estimate Request Sent!</h3>
           <p>Thanks — we'll call or text you within 2 hours during business hours. For urgent hazardous situations, call <a href="tel:+12293415953" style="color:var(--accent)">(229) 341-5953</a> directly.</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ══ SERVICE AREA ════════════════════════════════════════════ -->
 <section id="service-area" class="section service-area" aria-labelledby="area-heading">
   <div class="container">
     <div class="service-area-grid">
-
       <div class="area-text reveal">
         <span class="eyebrow">Where We Work</span>
         <h2 id="area-heading">Serving All of Lowndes County &amp; Beyond</h2>
         <p>Our crews are based in Valdosta and routinely service all surrounding communities within the South Georgia region. If you're not on the list below, just call — we'll let you know.</p>
         <div class="area-cities" role="list" aria-label="Service area cities">
-          <div class="area-city primary" role="listitem">
-            <div class="area-dot" aria-hidden="true"></div>
-            <strong>Valdosta, GA</strong>
-            <span style="margin-left:auto;font-size:11px;color:var(--accent);font-weight:700">PRIMARY</span>
-          </div>
+          <div class="area-city primary" role="listitem"><div class="area-dot" aria-hidden="true"></div><strong>Valdosta, GA</strong><span style="margin-left:auto;font-size:11px;color:var(--accent);font-weight:700">PRIMARY</span></div>
           <div class="area-city" role="listitem"><div class="area-dot" aria-hidden="true"></div>Hahira, GA</div>
           <div class="area-city" role="listitem"><div class="area-dot" aria-hidden="true"></div>Lake Park, GA</div>
           <div class="area-city" role="listitem"><div class="area-dot" aria-hidden="true"></div>Remerton, GA</div>
@@ -2122,33 +749,24 @@
           <div class="area-city" role="listitem"><div class="area-dot" aria-hidden="true"></div>Lowndes County (all areas)</div>
         </div>
       </div>
-
-      <!-- Stylized map / area visual -->
       <div class="area-map reveal reveal-delay-1" aria-label="Service area map showing South Georgia region" role="img">
         <div class="area-map-inner">
           <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;height:100%;padding:24px">
             <rect width="400" height="400" fill="#16231a"/>
             <g stroke="#324537" stroke-width="0.5" opacity="0.6">
-              <line x1="0" y1="80" x2="400" y2="80"/><line x1="0" y1="160" x2="400" y2="160"/>
-              <line x1="0" y1="240" x2="400" y2="240"/><line x1="0" y1="320" x2="400" y2="320"/>
-              <line x1="80" y1="0" x2="80" y2="400"/><line x1="160" y1="0" x2="160" y2="400"/>
-              <line x1="240" y1="0" x2="240" y2="400"/><line x1="320" y1="0" x2="320" y2="400"/>
+              <line x1="0" y1="80" x2="400" y2="80"/><line x1="0" y1="160" x2="400" y2="160"/><line x1="0" y1="240" x2="400" y2="240"/><line x1="0" y1="320" x2="400" y2="320"/>
+              <line x1="80" y1="0" x2="80" y2="400"/><line x1="160" y1="0" x2="160" y2="400"/><line x1="240" y1="0" x2="240" y2="400"/><line x1="320" y1="0" x2="320" y2="400"/>
             </g>
             <circle cx="200" cy="200" r="140" fill="none" stroke="#5a9c6c" stroke-width="1" stroke-dasharray="6,6" opacity="0.4"/>
             <circle cx="200" cy="200" r="100" fill="none" stroke="#5a9c6c" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
-            <circle cx="200" cy="200" r="60" fill="rgba(200,112,42,0.06)" stroke="#c8702a" stroke-width="1.5" stroke-dasharray="0" opacity="0.5"/>
-            <circle cx="155" cy="140" r="5" fill="#5a9c6c" opacity="0.8"/>
-            <text x="163" y="144" fill="#a3b29d" font-size="11" font-family="monospace">Hahira</text>
-            <circle cx="245" cy="255" r="5" fill="#5a9c6c" opacity="0.8"/>
-            <text x="253" y="259" fill="#a3b29d" font-size="11" font-family="monospace">Lake Park</text>
-            <circle cx="175" cy="235" r="5" fill="#5a9c6c" opacity="0.8"/>
-            <text x="100" y="239" fill="#a3b29d" font-size="11" font-family="monospace">Remerton</text>
-            <circle cx="270" cy="155" r="5" fill="#5a9c6c" opacity="0.8"/>
-            <text x="278" y="159" fill="#a3b29d" font-size="11" font-family="monospace">Statenville</text>
-            <circle cx="200" cy="200" r="14" fill="#c8702a" opacity="0.25"/>
-            <circle cx="200" cy="200" r="8" fill="#c8702a"/>
+            <circle cx="200" cy="200" r="60" fill="rgba(168,90,31,0.06)" stroke="#a85a1f" stroke-width="1.5" stroke-dasharray="0" opacity="0.5"/>
+            <circle cx="155" cy="140" r="5" fill="#5a9c6c" opacity="0.8"/><text x="163" y="144" fill="#a3b29d" font-size="11" font-family="monospace">Hahira</text>
+            <circle cx="245" cy="255" r="5" fill="#5a9c6c" opacity="0.8"/><text x="253" y="259" fill="#a3b29d" font-size="11" font-family="monospace">Lake Park</text>
+            <circle cx="175" cy="235" r="5" fill="#5a9c6c" opacity="0.8"/><text x="100" y="239" fill="#a3b29d" font-size="11" font-family="monospace">Remerton</text>
+            <circle cx="270" cy="155" r="5" fill="#5a9c6c" opacity="0.8"/><text x="278" y="159" fill="#a3b29d" font-size="11" font-family="monospace">Statenville</text>
+            <circle cx="200" cy="200" r="14" fill="#a85a1f" opacity="0.25"/><circle cx="200" cy="200" r="8" fill="#a85a1f"/>
             <text x="212" y="197" fill="#eef2eb" font-size="13" font-weight="bold" font-family="sans-serif">Valdosta</text>
-            <text x="212" y="210" fill="#c8702a" font-size="10" font-family="monospace">PRIMARY BASE</text>
+            <text x="212" y="210" fill="#a85a1f" font-size="10" font-family="monospace">PRIMARY BASE</text>
             <line x1="200" y1="60" x2="200" y2="340" stroke="#324537" stroke-width="2" opacity="0.7"/>
             <line x1="60" y1="200" x2="340" y2="200" stroke="#324537" stroke-width="2" opacity="0.7"/>
             <line x1="80" y1="80" x2="320" y2="320" stroke="#324537" stroke-width="1.5" opacity="0.4"/>
@@ -2157,12 +775,10 @@
           </svg>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ══ FEEDBACK SECTION ═══════════════════════════════════════ -->
 <section id="feedback" class="section feedback" aria-labelledby="feedback-heading">
   <div class="container">
     <div class="feedback-inner">
@@ -2183,10 +799,7 @@
             <input type="hidden" id="rating-val" name="rating" value="" />
           </div>
           <div class="form-row">
-            <div class="form-group">
-              <label for="fb-name">Your Name</label>
-              <input class="form-control" type="text" id="fb-name" name="name" placeholder="Jane D." />
-            </div>
+            <div class="form-group"><label for="fb-name">Your Name</label><input class="form-control" type="text" id="fb-name" name="name" placeholder="Jane D." /></div>
             <div class="form-group">
               <label for="fb-job">Service Received</label>
               <select class="form-control" id="fb-job" name="service">
@@ -2200,32 +813,23 @@
               </select>
             </div>
           </div>
-          <div class="form-group">
-            <label for="fb-comment">Your Feedback</label>
-            <textarea class="form-control" id="fb-comment" name="comment" placeholder="Tell us about your experience — what went well, what could be better…" rows="4"></textarea>
-          </div>
+          <div class="form-group"><label for="fb-comment">Your Feedback</label><textarea class="form-control" id="fb-comment" name="comment" placeholder="Tell us about your experience — what went well, what could be better…" rows="4"></textarea></div>
           <div class="form-group" style="display:flex;align-items:center;gap:10px">
             <input type="checkbox" id="fb-google" name="post_google" style="accent-color:var(--accent);width:16px;height:16px;cursor:pointer"/>
             <label for="fb-google" style="font-size:var(--fs-sm);color:var(--fg-dim);text-transform:none;letter-spacing:0;margin:0">Also post this review to Google</label>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
-            Submit Feedback
-          </button>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Submit Feedback</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ FINAL CTA STRIP ════════════════════════════════════════ -->
 <section class="section final-cta" aria-labelledby="cta-heading">
   <div class="container final-cta-inner">
     <div class="reveal">
       <span class="eyebrow" style="justify-content:center">Don't Wait — Trees Don't</span>
-      <h2 id="cta-heading" style="margin-top:var(--sp-2)">
-        Protect Your Property.<br>
-        <em>Call Valdosta's Specialists.</em>
-      </h2>
+      <h2 id="cta-heading" style="margin-top:var(--sp-2)">Protect Your Property.<br><em>Call Valdosta's Specialists.</em></h2>
       <p>Free estimates. Same-day response. 24/7 emergency line. Licensed, insured, and proud to serve South Georgia since 1980 — one clean jobsite at a time.</p>
       <div class="final-cta-btns">
         <a href="#booking" class="btn btn-primary btn-lg">Get a Free Estimate</a>
@@ -2237,10 +841,8 @@
     </div>
   </div>
 </section>
-
 </main>
 
-<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
 <footer class="pagefoot" role="contentinfo">
   <div class="container">
     <div class="foot-grid">
@@ -2255,19 +857,13 @@
         </div>
         <p>Licensed and insured hazardous tree removal, trimming, stump grinding, and emergency storm cleanup serving Valdosta, GA. Founded by Mike Boggan in 1980.</p>
         <div class="foot-social" aria-label="Social media links">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-          </a>
-          <a href="https://nextdoor.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Nextdoor">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </a>
-          <a href="https://google.com/maps" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Google Business">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://nextdoor.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Nextdoor"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+          <a href="https://google.com/maps" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Google Business"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></a>
         </div>
       </div>
       <div class="foot-col">
-        <h4>Services</h4>
+        <h3>Services</h3>
         <ul>
           <li><a href="#services">Hazardous Tree Removal</a></li>
           <li><a href="#services">Bucket Truck Trimming</a></li>
@@ -2277,7 +873,7 @@
         </ul>
       </div>
       <div class="foot-col">
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="#why-us">Why Choose Us</a></li>
           <li><a href="#gallery">Our Work</a></li>
@@ -2287,14 +883,9 @@
         </ul>
       </div>
       <div class="foot-col">
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <ul>
-          <li>
-            <a href="tel:+12293415953">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline-block;vertical-align:-2px;margin-right:5px" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              (229) 341-5953
-            </a>
-          </li>
+          <li><a href="tel:+12293415953"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline-block;vertical-align:-2px;margin-right:5px" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>(229) 341-5953</a></li>
           <li style="color:var(--fg-dim);font-size:var(--fs-sm)">Mon–Fri: 7:00 AM – 7:00 PM</li>
           <li style="color:var(--fg-dim);font-size:var(--fs-sm)">Sat: 8:00 AM – 5:00 PM</li>
           <li style="color:var(--accent);font-size:var(--fs-sm);font-weight:700">24/7 Emergency Line</li>
@@ -2316,44 +907,39 @@
   </div>
 </footer>
 
-<!-- Back to top -->
 <button class="back-top" id="back-top" aria-label="Back to top">
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
-<!-- ══ JAVASCRIPT ══════════════════════════════════════════════ -->
 <script>
 (function () {
   'use strict';
-
   const nav = document.getElementById('topnav');
   const heroBg = document.getElementById('hero-bg');
   const backTop = document.getElementById('back-top');
+  let ticking = false;
 
-  if (heroBg) {
-    setTimeout(function () { heroBg.classList.add('loaded'); }, 100);
-  }
+  if (heroBg) setTimeout(function () { heroBg.classList.add('loaded'); }, 100);
 
   window.addEventListener('scroll', function () {
-    const y = window.scrollY;
-    if (nav) nav.classList.toggle('scrolled', y > 60);
-    if (backTop) backTop.classList.toggle('visible', y > 500);
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        const y = window.scrollY;
+        if (nav) nav.classList.toggle('scrolled', y > 60);
+        if (backTop) backTop.classList.toggle('visible', y > 500);
+        ticking = false;
+      });
+      ticking = true;
+    }
   }, { passive: true });
 
-  if (backTop) {
-    backTop.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
+  if (backTop) backTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          io.unobserve(entry.target);
-        }
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
       });
     }, { threshold: 0.12 });
     revealEls.forEach(function (el) { io.observe(el); });
@@ -2366,18 +952,8 @@
   var menuClose = document.getElementById('menu-close');
   var mobileLinks = document.querySelectorAll('.mobile-link');
 
-  function openMenu() {
-    mobileMenu.classList.add('open');
-    mobileMenu.setAttribute('aria-hidden', 'false');
-    hamburger.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeMenu() {
-    mobileMenu.classList.remove('open');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    hamburger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
+  function openMenu() { mobileMenu.classList.add('open'); mobileMenu.setAttribute('aria-hidden', 'false'); hamburger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+  function closeMenu() { mobileMenu.classList.remove('open'); mobileMenu.setAttribute('aria-hidden', 'true'); hamburger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
 
   if (hamburger) hamburger.addEventListener('click', openMenu);
   if (menuClose) menuClose.addEventListener('click', closeMenu);
@@ -2394,17 +970,11 @@
       var phone = document.getElementById('est-phone').value.trim();
       var service = document.getElementById('est-service').value;
       var valid = true;
-
-      [document.getElementById('est-fname'), document.getElementById('est-phone'), document.getElementById('est-service')].forEach(function (el) {
-        el.style.borderColor = '';
-      });
-
+      [document.getElementById('est-fname'), document.getElementById('est-phone'), document.getElementById('est-service')].forEach(function (el) { el.style.borderColor = ''; });
       if (!fname) { document.getElementById('est-fname').style.borderColor = '#e05c3a'; valid = false; }
       if (!phone) { document.getElementById('est-phone').style.borderColor = '#e05c3a'; valid = false; }
       if (!service) { document.getElementById('est-service').style.borderColor = '#e05c3a'; valid = false; }
-
       if (!valid) return;
-
       formWrap.style.display = 'none';
       formSuccess.style.display = 'block';
     });
@@ -2412,7 +982,6 @@
 
   var stars = document.querySelectorAll('.rating-star');
   var ratingVal = document.getElementById('rating-val');
-
   stars.forEach(function (star) {
     star.addEventListener('click', function () {
       var val = parseInt(this.getAttribute('data-val'));
@@ -2423,14 +992,10 @@
         s.setAttribute('aria-checked', sVal <= val ? 'true' : 'false');
       });
     });
-    star.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
-    });
+    star.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); } });
     star.addEventListener('mouseenter', function () {
       var val = parseInt(this.getAttribute('data-val'));
-      stars.forEach(function (s) {
-        s.style.color = parseInt(s.getAttribute('data-val')) <= val ? '#f5b942' : '';
-      });
+      stars.forEach(function (s) { s.style.color = parseInt(s.getAttribute('data-val')) <= val ? '#f5b942' : ''; });
     });
     star.addEventListener('mouseleave', function () {
       var current = ratingVal ? parseInt(ratingVal.value) || 0 : 0;
@@ -2456,7 +1021,6 @@
 
   var sections = document.querySelectorAll('section[id], div[id="home"]');
   var navLinks = document.querySelectorAll('.nav-links a');
-
   var activeIO = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
@@ -2468,9 +1032,7 @@
       }
     });
   }, { rootMargin: '-40% 0px -40% 0px' });
-
   sections.forEach(function (s) { activeIO.observe(s); });
-
 })();
 </script>
 </body>
