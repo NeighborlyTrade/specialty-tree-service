@@ -962,46 +962,42 @@
   var formWrap = document.getElementById('estimate-form-wrap');
   var formSuccess = document.getElementById('form-success');
 
-if (estForm) {
-  estForm.addEventListener('submit', function (e) {
-    var fname = document.getElementById('est-fname').value.trim();
-    var phone = document.getElementById('est-phone').value.trim();
-    var service = document.getElementById('est-service').value;
-    var valid = true;
-    
-    [document.getElementById('est-fname'), document.getElementById('est-phone'), document.getElementById('est-service')].forEach(function (el) { el.style.borderColor = ''; });
-    if (!fname) { document.getElementById('est-fname').style.borderColor = '#e05c3a'; valid = false; }
-    if (!phone) { document.getElementById('est-phone').style.borderColor = '#e05c3a'; valid = false; }
-    if (!service) { document.getElementById('est-service').style.borderColor = '#e05c3a'; valid = false; }
-    
-    if (!valid) {
-      e.preventDefault();
-      return;
-    }
-    
-    // Let the form submit to Formspree, then show success message
-    var formData = new FormData(estForm);
-    fetch(estForm.action, {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    }).then(function(response) {
-      if (response.ok) {
-        formWrap.style.display = 'none';
-        formSuccess.style.display = 'block';
-        estForm.reset();
-      } else {
-        response.json().then(function(data) {
-          alert(data.error || 'Something went wrong. Please call (229) 341-5953 directly.');
-        });
+  var estForm = document.getElementById('estimate-form');
+  var formWrap = document.getElementById('estimate-form-wrap');
+  var formSuccess = document.getElementById('form-success');
+
+  if (estForm) {
+    estForm.addEventListener('submit', function (e) {
+      // 1. Run our custom validation first
+      var fname = document.getElementById('est-fname').value.trim();
+      var phone = document.getElementById('est-phone').value.trim();
+      var service = document.getElementById('est-service').value;
+      var valid = true;
+
+      [document.getElementById('est-fname'), document.getElementById('est-phone'), document.getElementById('est-service')].forEach(function (el) { 
+        el.style.borderColor = ''; 
+      });
+
+      if (!fname) { document.getElementById('est-fname').style.borderColor = '#e05c3a'; valid = false; }
+      if (!phone) { document.getElementById('est-phone').style.borderColor = '#e05c3a'; valid = false; }
+      if (!service) { document.getElementById('est-service').style.borderColor = '#e05c3a'; valid = false; }
+
+      // 2. If invalid, stop the submission
+      if (!valid) {
+        e.preventDefault();
+        return;
       }
-    }).catch(function() {
-      alert('Network error. Please call (229) 341-5953 directly.');
+
+      // 3. If valid, let the form submit natively to Formspree.
+      // We hide the form and show the success message immediately, 
+      // while Formspree processes the POST request in the background.
+      formWrap.style.display = 'none';
+      formSuccess.style.display = 'block';
+      
+      // Note: We do NOT call e.preventDefault() here. 
+      // We let the browser send the data to Formspree normally.
     });
-    
-    e.preventDefault();
-  });
-}
+  }
 
   var stars = document.querySelectorAll('.rating-star');
   var ratingVal = document.getElementById('rating-val');
